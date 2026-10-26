@@ -1,0 +1,2056 @@
+{
+  "metadata": {
+    "repository": "moment/moment",
+    "collection_date": "20251101_035612",
+    "total_prs_analyzed": 128,
+    "total_reviewers_found": 96,
+    "collection_parameters": {
+      "max_prs_fetched": 500,
+      "api_token_used": "github_pat_11AZSLY3Y..."
+    },
+    "split_type": "test",
+    "split_ratio": 0.19999999999999996,
+    "total_prs_in_split": 26,
+    "total_reviewers_in_split": 9
+  },
+  "pr_reviewer_data": [
+    {
+      "pr_id": "84d3f4cb-16ef-44e6-bab2-ff2fb201d8fb",
+      "repo_name": "moment/moment",
+      "pr_number": 6123,
+      "title": "Gigwell",
+      "state": "closed",
+      "author": {
+        "username": "danielschuetter",
+        "id": 5623328,
+        "profile_url": "https://github.com/danielschuetter"
+      },
+      "created_at": "2023-04-25T18:55:49Z",
+      "updated_at": "2023-04-25T20:42:53Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1400560221,
+          "reviewer_username": "danielschuetter",
+          "reviewer_id": 5623328,
+          "reviewer_profile_url": "https://github.com/danielschuetter",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5623328?u=3d3d27b1f70597f0befa15f45a07c3aa685acc4a&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "Sorry this was accidental. Can you please delete the pr?",
+          "submitted_at": "2023-04-25T19:03:42Z",
+          "commit_id": "ddf6bd57dbadaea83424e46cd9d897ed2c2487c2",
+          "html_url": "https://github.com/moment/moment/pull/6123#pullrequestreview-1400560221",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1522266203,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": " <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6123/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-missing-id.svg\" alt=\"CLA Missing ID\" align=\"left\" height=\"28\" width=\"328\"></a> <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6123/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\"></a><br/><br /><ul><li> :x: The commit (201decf94c7400e2af938b63719e909abaa1b3f9, 285390d6c37b006ea397b53d2a618ea352c1c247, 90ee7278fe6fb6904ab8d9e9030d02b3c6129869, ddf6bd57dbadaea83424e46cd9d897ed2c2487c2). This user is missing the User's ID, preventing the EasyCLA check. <a href='https://help.github.com/en/github/committing-changes-to-your-project/why-are-my-commits-linked-to-the-wrong-user' target='_blank'>Consult GitHub Help</a> to resolve.For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul>",
+          "created_at": "2023-04-25T18:55:52Z",
+          "updated_at": "2023-04-25T18:58:08Z",
+          "html_url": "https://github.com/moment/moment/pull/6123#issuecomment-1522266203",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "danielschuetter"
+        ],
+        "approval_count": 0,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "730e6652-3049-4ecb-a0e7-de65951ea697",
+      "repo_name": "moment/moment",
+      "pr_number": 6125,
+      "title": "Italian days and months with capital letter",
+      "state": "closed",
+      "author": {
+        "username": "federicocappellotto97",
+        "id": 63153191,
+        "profile_url": "https://github.com/federicocappellotto97"
+      },
+      "created_at": "2023-05-04T13:08:14Z",
+      "updated_at": "2023-12-16T21:49:37Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Other languages have days with capital letter, like Monday, Saturday etc.. in italian they were all lowercase.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1449111725,
+          "reviewer_username": "suyundukov",
+          "reviewer_id": 14142638,
+          "reviewer_profile_url": "https://github.com/suyundukov",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/14142638?u=414cab5d420e8c9f50d1b1697067408a9ce71007&v=4",
+          "reviewer_type": "User",
+          "state": "CHANGES_REQUESTED",
+          "body": "Are they capitalised in Italian? What are the rules? In English days, months, and holidays are always capitalised as these are proper nouns, but for example in French they are not capitalised, because of the rules regarding capitalisation.",
+          "submitted_at": "2023-05-29T08:29:51Z",
+          "commit_id": "7ba5f07426ba83438aa4bc6c29d464dd7036767f",
+          "html_url": "https://github.com/moment/moment/pull/6125#pullrequestreview-1449111725",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1534752577,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: federicocappellotto97 / name: Federico Ottavio  (7ba5f07426ba83438aa4bc6c29d464dd7036767f)</li></ul>",
+          "created_at": "2023-05-04T13:08:17Z",
+          "updated_at": "2023-05-04T13:10:28Z",
+          "html_url": "https://github.com/moment/moment/pull/6125#issuecomment-1534752577",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858937208,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@federicocappellotto97 according to CLDR https://github.com/unicode-org/cldr/blob/release-44-1/common/main/it.xml#L1732 the month names are not uppercase.\r\n\r\n@suyundukov just demand CLDR proof next time there is a proposed locale change (or fish it out yourself and prove it's not needed (like 95% of the time)).",
+          "created_at": "2023-12-16T21:49:36Z",
+          "updated_at": "2023-12-16T21:49:36Z",
+          "html_url": "https://github.com/moment/moment/pull/6125#issuecomment-1858937208",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "suyundukov"
+        ],
+        "approval_count": 0,
+        "changes_requested_count": 1,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "a63d6b13-7c78-41a7-ae43-e88b68814207",
+      "repo_name": "moment/moment",
+      "pr_number": 6127,
+      "title": "feat: add support for getting month name with moment",
+      "state": "closed",
+      "author": {
+        "username": "Tobi-Adeneye",
+        "id": 124276347,
+        "profile_url": "https://github.com/Tobi-Adeneye"
+      },
+      "created_at": "2023-05-08T21:19:31Z",
+      "updated_at": "2023-12-16T21:45:40Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1449096038,
+          "reviewer_username": "suyundukov",
+          "reviewer_id": 14142638,
+          "reviewer_profile_url": "https://github.com/suyundukov",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/14142638?u=414cab5d420e8c9f50d1b1697067408a9ce71007&v=4",
+          "reviewer_type": "User",
+          "state": "CHANGES_REQUESTED",
+          "body": "What is the use case for it? What are you trying to accomplish?\r\n\r\nYou can use `format('MMMM')` if you want to get the month for a date.\r\n\r\nOr use `localeData` for it, like `moment.localeData().months(date)`.",
+          "submitted_at": "2023-05-29T08:18:11Z",
+          "commit_id": "094daa6f1eac6931f36f85cc703a7d8ac51cc400",
+          "html_url": "https://github.com/moment/moment/pull/6127#pullrequestreview-1449096038",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1539066458,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": " <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6127/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-missing-id.svg\" alt=\"CLA Missing ID\" align=\"left\" height=\"28\" width=\"328\"></a> <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6127/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\"></a><br/><br /><ul><li> :x: The commit (094daa6f1eac6931f36f85cc703a7d8ac51cc400). This user is missing the User's ID, preventing the EasyCLA check. <a href='https://help.github.com/en/github/committing-changes-to-your-project/why-are-my-commits-linked-to-the-wrong-user' target='_blank'>Consult GitHub Help</a> to resolve.For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul>",
+          "created_at": "2023-05-08T21:19:34Z",
+          "updated_at": "2023-05-08T21:19:34Z",
+          "html_url": "https://github.com/moment/moment/pull/6127#issuecomment-1539066458",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858936598,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@suyundukov yeah, valid questions indeed.\r\n\r\nNot to mention hardcoding the english names...\r\n\r\n@Tobi-Adeneye if you need the english month name, just do `moment.localeData('en').months()[0]`",
+          "created_at": "2023-12-16T21:45:40Z",
+          "updated_at": "2023-12-16T21:45:40Z",
+          "html_url": "https://github.com/moment/moment/pull/6127#issuecomment-1858936598",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "suyundukov"
+        ],
+        "approval_count": 0,
+        "changes_requested_count": 1,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "460e19a7-f3f4-49a2-a351-0846bb0214ce",
+      "repo_name": "moment/moment",
+      "pr_number": 6128,
+      "title": "[feature] Graceful handling of undefined locale name",
+      "state": "closed",
+      "author": {
+        "username": "Tobi-Adeneye",
+        "id": 124276347,
+        "profile_url": "https://github.com/Tobi-Adeneye"
+      },
+      "created_at": "2023-05-08T21:27:34Z",
+      "updated_at": "2023-12-16T21:43:24Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "…ane function and ensure it returns a boolean",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1449078221,
+          "reviewer_username": "suyundukov",
+          "reviewer_id": 14142638,
+          "reviewer_profile_url": "https://github.com/suyundukov",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/14142638?u=414cab5d420e8c9f50d1b1697067408a9ce71007&v=4",
+          "reviewer_type": "User",
+          "state": "CHANGES_REQUESTED",
+          "body": "Why are you passing undefined value here? What is the use case? I think it's up to user to check for the existence of the value before calling `isLocaleNameSane`.",
+          "submitted_at": "2023-05-29T08:10:53Z",
+          "commit_id": "2cbd4ca998444754a8cac2a661f2310cb5256a32",
+          "html_url": "https://github.com/moment/moment/pull/6128#pullrequestreview-1449078221",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1539078345,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: Tobi-Adeneye / name: Oluwatobiloba A. Adeneye  (2cbd4ca998444754a8cac2a661f2310cb5256a32)</li></ul>",
+          "created_at": "2023-05-08T21:27:37Z",
+          "updated_at": "2023-05-09T09:06:21Z",
+          "html_url": "https://github.com/moment/moment/pull/6128#issuecomment-1539078345",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1566738924,
+          "commenter_username": "suyundukov",
+          "commenter_id": 14142638,
+          "commenter_profile_url": "https://github.com/suyundukov",
+          "body": "Duplicate #5987.",
+          "created_at": "2023-05-29T08:13:32Z",
+          "updated_at": "2023-05-29T08:13:32Z",
+          "html_url": "https://github.com/moment/moment/pull/6128#issuecomment-1566738924",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858936227,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "merged in bcaa0123",
+          "created_at": "2023-12-16T21:43:24Z",
+          "updated_at": "2023-12-16T21:43:24Z",
+          "html_url": "https://github.com/moment/moment/pull/6128#issuecomment-1858936227",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 3,
+        "unique_reviewers": [
+          "suyundukov"
+        ],
+        "approval_count": 0,
+        "changes_requested_count": 1,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "6ac6673e-a59e-476d-b69b-0c9620e4fad8",
+      "repo_name": "moment/moment",
+      "pr_number": 6129,
+      "title": "Capital letter months in language Ukraine - uk.js",
+      "state": "closed",
+      "author": {
+        "username": "martinjack",
+        "id": 11950689,
+        "profile_url": "https://github.com/martinjack"
+      },
+      "created_at": "2023-05-09T17:29:01Z",
+      "updated_at": "2023-12-16T21:38:49Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "### Changes\r\n* Updated name months locale Ukraine - uk.js. Capital letter months",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1517951735,
+          "reviewer_username": "bs-divy-jain",
+          "reviewer_id": 99812914,
+          "reviewer_profile_url": "https://github.com/bs-divy-jain",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/99812914?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-07-07T05:49:36Z",
+          "commit_id": "cc7c7643d1fcb0840356848ff7a33ca28b605426",
+          "html_url": "https://github.com/moment/moment/pull/6129#pullrequestreview-1517951735",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1540582718,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": " <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6129/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\"></a><br/><br /><ul><li><a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6129/#/?version=2' target='_blank'>:x:</a> - login: @martinjack / name: Evgen Kytonin . The commit (cc7c7643d1fcb0840356848ff7a33ca28b605426) is not authorized under a signed CLA. <a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6129/#/?version=2' target='_blank'>Please click here to be authorized</a>. For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul>",
+          "created_at": "2023-05-09T17:29:07Z",
+          "updated_at": "2023-05-09T17:29:07Z",
+          "html_url": "https://github.com/moment/moment/pull/6129#issuecomment-1540582718",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858935509,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "Accoring to CLDR the month names are lower case: https://github.com/unicode-org/cldr/blob/release-44-1/common/main/uk.xml#L1836\r\n\r\nIf you really believe they should be upper-case take the issue with them, and after they approve it and release it, I'll allow a change here.",
+          "created_at": "2023-12-16T21:38:49Z",
+          "updated_at": "2023-12-16T21:38:49Z",
+          "html_url": "https://github.com/moment/moment/pull/6129#issuecomment-1858935509",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "bs-divy-jain"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "8a590066-767f-4281-9c31-947f9475ff8d",
+      "repo_name": "moment/moment",
+      "pr_number": 6151,
+      "title": "Commiting into the moment/locale/guj.js folder ",
+      "state": "open",
+      "author": {
+        "username": "levinbaria",
+        "id": 91713183,
+        "profile_url": "https://github.com/levinbaria"
+      },
+      "created_at": "2023-08-16T06:19:24Z",
+      "updated_at": "2023-12-16T21:31:08Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Solving the issue number #6149 and fixing the same.\r\n",
+      "labels": [
+        "rewrite"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1632416496,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-09-19T04:50:01Z",
+          "commit_id": "45a980ffba785e2b1940790d68d124d36c2a051f",
+          "html_url": "https://github.com/moment/moment/pull/6151#pullrequestreview-1632416496",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1680026185,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": " <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6151/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\"></a><br/><br /><ul><li><a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6151/#/?version=2' target='_blank'>:x:</a> - login: @levinbaria / name: Levin Baria . The commit (45a980ffba785e2b1940790d68d124d36c2a051f) is not authorized under a signed CLA. <a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6151/#/?version=2' target='_blank'>Please click here to be authorized</a>. For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul>",
+          "created_at": "2023-08-16T06:19:27Z",
+          "updated_at": "2023-08-16T06:19:27Z",
+          "html_url": "https://github.com/moment/moment/pull/6151#issuecomment-1680026185",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858934230,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@levinbaria you need to change the `src/locale/gu.js` file, not `locale/gu.js`. Also fix tests. Also I can't really see what the change is, you should provide some proof from [CLDR](https://github.com/unicode-org/cldr/blob/release-44-1/common/main) that the changes are warranted.",
+          "created_at": "2023-12-16T21:30:50Z",
+          "updated_at": "2023-12-16T21:30:50Z",
+          "html_url": "https://github.com/moment/moment/pull/6151#issuecomment-1858934230",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "f4cefcd5-2505-4199-bfc4-1dfe2f7f4221",
+      "repo_name": "moment/moment",
+      "pr_number": 6155,
+      "title": "PM and AM in dutch",
+      "state": "open",
+      "author": {
+        "username": "reyostallenberg",
+        "id": 3579090,
+        "profile_url": "https://github.com/reyostallenberg"
+      },
+      "created_at": "2023-08-24T15:19:48Z",
+      "updated_at": "2023-12-18T09:57:12Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "See https://nl.wikipedia.org/wiki/12-uursnotatie which states \r\n\r\n\"In het Nederlands spreekt men ook van voormiddag en namiddag (v.m. en n.m. of vm en nm).\"  which means \"In Dutch people also speak of morning (voormiddag)  and afternoon (namiddag) (v.m. and n.m. or vm and pm).\"",
+      "labels": [
+        "Needs tests",
+        "rewrite"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1640803511,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-09-23T08:27:21Z",
+          "commit_id": "0f6a6d1554bf92c1c511c9ca3f845ab291d2336e",
+          "html_url": "https://github.com/moment/moment/pull/6155#pullrequestreview-1640803511",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 1691079432,
+          "reviewer_username": "rksp25",
+          "reviewer_id": 1412099,
+          "reviewer_profile_url": "https://github.com/rksp25",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1412099?u=0d3c2282f253eb9c4c9b880a148e8bca4c646046&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-10-21T02:47:48Z",
+          "commit_id": "0f6a6d1554bf92c1c511c9ca3f845ab291d2336e",
+          "html_url": "https://github.com/moment/moment/pull/6155#pullrequestreview-1691079432",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1691885552,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: reyostallenberg / name: Reyo Stallenberg  (d2dc94017e7a149409b4ed6d764b5e181eda471d, 0f6a6d1554bf92c1c511c9ca3f845ab291d2336e)</li></ul>",
+          "created_at": "2023-08-24T15:20:08Z",
+          "updated_at": "2023-12-18T09:57:12Z",
+          "html_url": "https://github.com/moment/moment/pull/6155#issuecomment-1691885552",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858933912,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@reyostallenberg you need to change `src/locale/nl.js` and also add/fix some tests.\r\n\r\n@anandfresh @rksp25 for locale changes you should demand links / snippets to CLDR data, like this: https://github.com/unicode-org/cldr/blob/release-44-1/common/main/nl.xml#L5150\r\n",
+          "created_at": "2023-12-16T21:28:44Z",
+          "updated_at": "2023-12-16T21:28:44Z",
+          "html_url": "https://github.com/moment/moment/pull/6155#issuecomment-1858933912",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "anandfresh",
+          "rksp25"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "df12a47d-5eec-4830-8e09-d53de7e19cff",
+      "repo_name": "moment/moment",
+      "pr_number": 6156,
+      "title": "feat: consider string number as milliseconds",
+      "state": "closed",
+      "author": {
+        "username": "0Ncoder0",
+        "id": 35026496,
+        "profile_url": "https://github.com/0Ncoder0"
+      },
+      "created_at": "2023-08-25T03:11:26Z",
+      "updated_at": "2024-02-23T02:50:08Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "consider string number as milliseconds when create a Moment",
+      "labels": [
+        "Needs tests"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1625833981,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-09-14T05:01:43Z",
+          "commit_id": "00fdf46343713e826082aecdb668e8880597be63",
+          "html_url": "https://github.com/moment/moment/pull/6156#pullrequestreview-1625833981",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 1691079363,
+          "reviewer_username": "rksp25",
+          "reviewer_id": 1412099,
+          "reviewer_profile_url": "https://github.com/rksp25",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1412099?u=0d3c2282f253eb9c4c9b880a148e8bca4c646046&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-10-21T02:47:29Z",
+          "commit_id": "00fdf46343713e826082aecdb668e8880597be63",
+          "html_url": "https://github.com/moment/moment/pull/6156#pullrequestreview-1691079363",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1692693981,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: 0Ncoder0  (00fdf46343713e826082aecdb668e8880597be63)</li></ul>",
+          "created_at": "2023-08-25T03:11:29Z",
+          "updated_at": "2023-08-25T03:18:59Z",
+          "html_url": "https://github.com/moment/moment/pull/6156#issuecomment-1692693981",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858933281,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@0Ncoder0 I'm not 100% sure this is a good change. If you know this is a milliseconds string, why don't you convert to number before passing to moment? This input comes from a dev, not from a user (I hope) so the dev can handle a `+` sign...\r\n\r\nAlso it doesn't have tests.",
+          "created_at": "2023-12-16T21:24:41Z",
+          "updated_at": "2023-12-16T21:24:41Z",
+          "html_url": "https://github.com/moment/moment/pull/6156#issuecomment-1858933281",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "anandfresh",
+          "rksp25"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "f7045ee2-0be4-4ebc-ba3e-f619210db267",
+      "repo_name": "moment/moment",
+      "pr_number": 6164,
+      "title": "Create or.js",
+      "state": "closed",
+      "author": {
+        "username": "Ajinkya-2607",
+        "id": 71754129,
+        "profile_url": "https://github.com/Ajinkya-2607"
+      },
+      "created_at": "2023-08-29T12:26:09Z",
+      "updated_at": "2023-12-16T21:22:27Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1610554808,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-09-05T08:50:03Z",
+          "commit_id": "b7d49a816e56f4e9048daa27bbc0f03d737f23b7",
+          "html_url": "https://github.com/moment/moment/pull/6164#pullrequestreview-1610554808",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1697346378,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: Ajinkya-2607  (b7d49a816e56f4e9048daa27bbc0f03d737f23b7)</li></ul>",
+          "created_at": "2023-08-29T12:26:12Z",
+          "updated_at": "2023-08-29T12:31:46Z",
+          "html_url": "https://github.com/moment/moment/pull/6164#issuecomment-1697346378",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1697346692,
+          "commenter_username": "Ajinkya-2607",
+          "commenter_id": 71754129,
+          "commenter_profile_url": "https://github.com/Ajinkya-2607",
+          "body": "Add Odisa Language",
+          "created_at": "2023-08-29T12:26:26Z",
+          "updated_at": "2023-08-29T12:26:26Z",
+          "html_url": "https://github.com/moment/moment/pull/6164#issuecomment-1697346692",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1697355419,
+          "commenter_username": "Ajinkya-2607",
+          "commenter_id": 71754129,
+          "commenter_profile_url": "https://github.com/Ajinkya-2607",
+          "body": "add Odisa language script",
+          "created_at": "2023-08-29T12:32:16Z",
+          "updated_at": "2023-08-29T12:32:16Z",
+          "html_url": "https://github.com/moment/moment/pull/6164#issuecomment-1697355419",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858932870,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "Close in favor of #6166 ",
+          "created_at": "2023-12-16T21:22:27Z",
+          "updated_at": "2023-12-16T21:22:27Z",
+          "html_url": "https://github.com/moment/moment/pull/6164#issuecomment-1858932870",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 4,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "d75952f1-497f-462f-89ff-32eb1175b3bb",
+      "repo_name": "moment/moment",
+      "pr_number": 6166,
+      "title": "[new locale] od: Odia",
+      "state": "open",
+      "author": {
+        "username": "Ajinkya-2607",
+        "id": 71754129,
+        "profile_url": "https://github.com/Ajinkya-2607"
+      },
+      "created_at": "2023-08-31T10:57:45Z",
+      "updated_at": "2023-12-25T17:24:00Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "",
+      "labels": [
+        "Unit Test Failed"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1636823414,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-09-21T03:29:28Z",
+          "commit_id": "980b0365e4dd533a338ca0973e93f892acd2f365",
+          "html_url": "https://github.com/moment/moment/pull/6166#pullrequestreview-1636823414",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 1691079235,
+          "reviewer_username": "rksp25",
+          "reviewer_id": 1412099,
+          "reviewer_profile_url": "https://github.com/rksp25",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1412099?u=0d3c2282f253eb9c4c9b880a148e8bca4c646046&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-10-21T02:47:03Z",
+          "commit_id": "980b0365e4dd533a338ca0973e93f892acd2f365",
+          "html_url": "https://github.com/moment/moment/pull/6166#pullrequestreview-1691079235",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1858932702,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@Ajinkya-2607 I'm sorry, which country/locale is this?",
+          "created_at": "2023-12-16T21:21:28Z",
+          "updated_at": "2023-12-16T21:21:28Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1858932702",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 1859063160,
+          "commenter_username": "Ajinkya-2607",
+          "commenter_id": 71754129,
+          "commenter_profile_url": "https://github.com/Ajinkya-2607",
+          "body": "India\r\n\r\nOn Sun, 17 Dec, 2023, 2:51 am Iskren Ivov Chernev, ***@***.***>\r\nwrote:\r\n\r\n> @Ajinkya-2607 <https://github.com/Ajinkya-2607> I'm sorry, which\r\n> country/locale is this?\r\n>\r\n> —\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/moment/moment/pull/6166#issuecomment-1858932702>, or\r\n> unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/ARDODELEBUUWDI7M2EIBYMTYJYGGJAVCNFSM6AAAAAA4F4HQWKVHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMYTQNJYHEZTENZQGI>\r\n> .\r\n> You are receiving this because you were mentioned.Message ID:\r\n> ***@***.***>\r\n>\r\n",
+          "created_at": "2023-12-17T07:41:38Z",
+          "updated_at": "2023-12-17T07:41:38Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1859063160",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1859132330,
+          "commenter_username": "KristjanESPERANTO",
+          "commenter_id": 35647502,
+          "commenter_profile_url": "https://github.com/KristjanESPERANTO",
+          "body": "It's odia language, isn't it? Language code `or`.\r\n\r\nhttps://en.wikipedia.org/wiki/Odia_language",
+          "created_at": "2023-12-17T10:33:08Z",
+          "updated_at": "2023-12-17T10:33:08Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1859132330",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1859188144,
+          "commenter_username": "Ajinkya-2607",
+          "commenter_id": 71754129,
+          "commenter_profile_url": "https://github.com/Ajinkya-2607",
+          "body": "Yes, it is.\r\n\r\nOn Sun, 17 Dec, 2023, 4:03 pm Kristjan ESPERANTO, ***@***.***>\r\nwrote:\r\n\r\n> It's odia language, isn't it? Language code or.\r\n>\r\n> https://en.wikipedia.org/wiki/Odia_language\r\n>\r\n> —\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/moment/moment/pull/6166#issuecomment-1859132330>, or\r\n> unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/ARDODEMO4F4EXRJY56IAKP3YJ3C67AVCNFSM6AAAAAA4F4HQWKVHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMYTQNJZGEZTEMZTGA>\r\n> .\r\n> You are receiving this because you were mentioned.Message ID:\r\n> ***@***.***>\r\n>\r\n",
+          "created_at": "2023-12-17T14:28:22Z",
+          "updated_at": "2023-12-17T14:28:22Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1859188144",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1859282157,
+          "commenter_username": "KristjanESPERANTO",
+          "commenter_id": 35647502,
+          "commenter_profile_url": "https://github.com/KristjanESPERANTO",
+          "body": "@Ajinkya-2607 Are #6175 and #6066 for the same language?",
+          "created_at": "2023-12-17T20:56:42Z",
+          "updated_at": "2023-12-17T20:56:42Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1859282157",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1869058987,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "Ah, tests fail on this one too. @Ajinkya-2607 can you have a look?",
+          "created_at": "2023-12-25T17:14:03Z",
+          "updated_at": "2023-12-25T17:14:03Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1869058987",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 1869059294,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "I also created an up to date branch (there is a file with bad endlines which messes up git): https://github.com/moment/moment/tree/fixup-6166, feel free to work on top of it. ",
+          "created_at": "2023-12-25T17:15:22Z",
+          "updated_at": "2023-12-25T17:15:22Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1869059294",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 1869061628,
+          "commenter_username": "Ajinkya-2607",
+          "commenter_id": 71754129,
+          "commenter_profile_url": "https://github.com/Ajinkya-2607",
+          "body": "Ok, I'll check it out.\r\n\r\nOn Mon, 25 Dec, 2023, 10:45 pm Iskren Ivov Chernev, <\r\n***@***.***> wrote:\r\n\r\n> I also created an up to date branch (there is a file with bad endlines\r\n> which messes up git): https://github.com/moment/moment/tree/fixup-6166,\r\n> feel free to work on top of it.\r\n>\r\n> —\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/moment/moment/pull/6166#issuecomment-1869059294>, or\r\n> unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/ARDODEMFHZHRWQ5EIT4FZD3YLGYDLAVCNFSM6AAAAAA4F4HQWKVHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMYTQNRZGA2TSMRZGQ>\r\n> .\r\n> You are receiving this because you were mentioned.Message ID:\r\n> ***@***.***>\r\n>\r\n",
+          "created_at": "2023-12-25T17:23:59Z",
+          "updated_at": "2023-12-25T17:23:59Z",
+          "html_url": "https://github.com/moment/moment/pull/6166#issuecomment-1869061628",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 8,
+        "unique_reviewers": [
+          "anandfresh",
+          "rksp25"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "4fad49a5-af2a-4a5e-a193-b2bde7938b21",
+      "repo_name": "moment/moment",
+      "pr_number": 6169,
+      "title": "[bugfix] Access default year month date from moment instance",
+      "state": "closed",
+      "author": {
+        "username": "yulodl",
+        "id": 7265437,
+        "profile_url": "https://github.com/yulodl"
+      },
+      "created_at": "2023-09-06T16:48:33Z",
+      "updated_at": "2023-12-26T13:58:45Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "When timezone is setted, moment.date() may be different from  Date().getDate()",
+      "labels": [
+        "Needs tests"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1629887764,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-09-16T02:18:23Z",
+          "commit_id": "4201d589549e738a8c5f4b2eed5ca13eae83b348",
+          "html_url": "https://github.com/moment/moment/pull/6169#pullrequestreview-1629887764",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 1795953576,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-12-25T21:18:21Z",
+          "commit_id": "4201d589549e738a8c5f4b2eed5ca13eae83b348",
+          "html_url": "https://github.com/moment/moment/pull/6169#pullrequestreview-1795953576",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1708756397,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: yulodl / name: Shell Yu  (4201d589549e738a8c5f4b2eed5ca13eae83b348)</li></ul>",
+          "created_at": "2023-09-06T16:48:37Z",
+          "updated_at": "2023-09-06T16:57:28Z",
+          "html_url": "https://github.com/moment/moment/pull/6169#issuecomment-1708756397",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858932447,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@yulodl I don't fully understand why this is needed, explain the issue you're fixing in more detail and provide tests.",
+          "created_at": "2023-12-16T21:19:52Z",
+          "updated_at": "2023-12-16T21:19:52Z",
+          "html_url": "https://github.com/moment/moment/pull/6169#issuecomment-1858932447",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 1869564406,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "If you want to create timezone-specific instances, use `moment.tz(...)` constructor, which uses `moment.utc` internally and then adjusts for the specified timezone.\r\n\r\nFeel free to reopen (or open a new issue) if you think the recommended flow is broken.",
+          "created_at": "2023-12-26T13:58:45Z",
+          "updated_at": "2023-12-26T13:58:45Z",
+          "html_url": "https://github.com/moment/moment/pull/6169#issuecomment-1869564406",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 3,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "19b0f4fb-d7da-4119-848a-9787e21e8ba5",
+      "repo_name": "moment/moment",
+      "pr_number": 6175,
+      "title": "Create od-ind.js",
+      "state": "open",
+      "author": {
+        "username": "SiDD-sIngH",
+        "id": 92213202,
+        "profile_url": "https://github.com/SiDD-sIngH"
+      },
+      "created_at": "2023-10-04T21:18:44Z",
+      "updated_at": "2023-12-16T21:18:09Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Moment.js locale odia(oriya) language",
+      "labels": [
+        "rewrite"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1691079129,
+          "reviewer_username": "rksp25",
+          "reviewer_id": 1412099,
+          "reviewer_profile_url": "https://github.com/rksp25",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1412099?u=0d3c2282f253eb9c4c9b880a148e8bca4c646046&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-10-21T02:46:39Z",
+          "commit_id": "61e45c9b097210a86987e805199cfef70acfd81a",
+          "html_url": "https://github.com/moment/moment/pull/6175#pullrequestreview-1691079129",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1747657196,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: SiDD-sIngH / name: Siddhant Singh  (59dc89835a54d66a49991947a4fc9253f845c84e, 61e45c9b097210a86987e805199cfef70acfd81a)</li></ul>",
+          "created_at": "2023-10-04T21:18:48Z",
+          "updated_at": "2023-10-04T21:30:26Z",
+          "html_url": "https://github.com/moment/moment/pull/6175#issuecomment-1747657196",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858932169,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "@SiDD-sIngH you need to add `src/local/XXX.js` and add tests.\r\n\r\n@rksp25 I see you want to help, at least check the right files (not autogen) are modified and there are tests present.",
+          "created_at": "2023-12-16T21:18:04Z",
+          "updated_at": "2023-12-16T21:18:04Z",
+          "html_url": "https://github.com/moment/moment/pull/6175#issuecomment-1858932169",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "rksp25"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "663abb17-63dd-4f3b-9059-4cec76729ed1",
+      "repo_name": "moment/moment",
+      "pr_number": 6176,
+      "title": "Update locale/vi.js to capitalize the first letter of months and weekdays",
+      "state": "closed",
+      "author": {
+        "username": "thanhminhmr",
+        "id": 31412085,
+        "profile_url": "https://github.com/thanhminhmr"
+      },
+      "created_at": "2023-10-11T10:18:37Z",
+      "updated_at": "2023-12-24T14:06:17Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Update locale/vi.js to capitalize the first letter of months and weekdays",
+      "labels": [
+        "rewrite"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1691078869,
+          "reviewer_username": "rksp25",
+          "reviewer_id": 1412099,
+          "reviewer_profile_url": "https://github.com/rksp25",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1412099?u=0d3c2282f253eb9c4c9b880a148e8bca4c646046&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-10-21T02:45:24Z",
+          "commit_id": "65b506ec6676de61ec96c068623d3179cf3c6f0f",
+          "html_url": "https://github.com/moment/moment/pull/6176#pullrequestreview-1691078869",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 1691079008,
+          "reviewer_username": "rksp25",
+          "reviewer_id": 1412099,
+          "reviewer_profile_url": "https://github.com/rksp25",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1412099?u=0d3c2282f253eb9c4c9b880a148e8bca4c646046&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2023-10-21T02:46:11Z",
+          "commit_id": "65b506ec6676de61ec96c068623d3179cf3c6f0f",
+          "html_url": "https://github.com/moment/moment/pull/6176#pullrequestreview-1691079008",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1757336699,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: thanhminhmr / name: Mai Thanh Minh  (36d90908a5126dc24774e6a8c5483390d7777fba, 65b506ec6676de61ec96c068623d3179cf3c6f0f)</li></ul>",
+          "created_at": "2023-10-11T10:18:43Z",
+          "updated_at": "2023-12-24T12:51:13Z",
+          "html_url": "https://github.com/moment/moment/pull/6176#issuecomment-1757336699",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1858931599,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "According to CLDR data, the month names are lowercase in the `format` variant and uppercase in the `standalone` variant. You also need to modify `src/locale/vi.js`, (not `locale/vi.js` which is autogenerated). Get inspiration from here: https://github.com/moment/moment/blob/develop/src/locale/cs.js#L8",
+          "created_at": "2023-12-16T21:14:27Z",
+          "updated_at": "2023-12-16T21:14:27Z",
+          "html_url": "https://github.com/moment/moment/pull/6176#issuecomment-1858931599",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 1859017966,
+          "commenter_username": "thanhminhmr",
+          "commenter_id": 31412085,
+          "commenter_profile_url": "https://github.com/thanhminhmr",
+          "body": "@ichernev Thanks for the feedback. Should I rollback the changes on `locale/vi.js` before editing `src/locale/vi.js`?",
+          "created_at": "2023-12-17T02:29:01Z",
+          "updated_at": "2023-12-17T02:29:01Z",
+          "html_url": "https://github.com/moment/moment/pull/6176#issuecomment-1859017966",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1868505316,
+          "commenter_username": "ichernev",
+          "commenter_id": 757060,
+          "commenter_profile_url": "https://github.com/ichernev",
+          "body": "> @ichernev Thanks for the feedback. Should I rollback the changes on `locale/vi.js` before editing `src/locale/vi.js`?\r\n\r\nYes, only change files under src. The other ones are generated on release. Unfortunately the helpful bot that tells you that is out of order atm.",
+          "created_at": "2023-12-24T12:27:19Z",
+          "updated_at": "2023-12-24T12:27:19Z",
+          "html_url": "https://github.com/moment/moment/pull/6176#issuecomment-1868505316",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 4,
+        "unique_reviewers": [
+          "rksp25"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "98f34f3a-67f3-48a6-88ca-32d9ff504156",
+      "repo_name": "moment/moment",
+      "pr_number": 6195,
+      "title": "ci: add Azure Static Web Apps workflow file",
+      "state": "open",
+      "author": {
+        "username": "dhirenofficial",
+        "id": 12516427,
+        "profile_url": "https://github.com/dhirenofficial"
+      },
+      "created_at": "2023-12-30T03:14:58Z",
+      "updated_at": "2024-01-24T09:28:36Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "on-behalf-of: @Azure opensource@microsoft.com",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1840883949,
+          "reviewer_username": "Anjaa84",
+          "reviewer_id": 49702955,
+          "reviewer_profile_url": "https://github.com/Anjaa84",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/49702955?u=64af20a10d069ba85bf0e4f07ff11a85ffeed3de&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-01-24T09:26:19Z",
+          "commit_id": "8be0dbf1ca797670656f85273e76766a1606d3ff",
+          "html_url": "https://github.com/moment/moment/pull/6195#pullrequestreview-1840883949",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 1840890669,
+          "reviewer_username": "Anjaa84",
+          "reviewer_id": 49702955,
+          "reviewer_profile_url": "https://github.com/Anjaa84",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/49702955?u=64af20a10d069ba85bf0e4f07ff11a85ffeed3de&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-01-24T09:28:36Z",
+          "commit_id": "8be0dbf1ca797670656f85273e76766a1606d3ff",
+          "html_url": "https://github.com/moment/moment/pull/6195#pullrequestreview-1840890669",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1872438219,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: dhirenofficial / name: Dhiren Tuladhar  (d4c8c8371bdaf35be9c410256a96e4081053b62c, 8be0dbf1ca797670656f85273e76766a1606d3ff)</li></ul>",
+          "created_at": "2023-12-30T03:15:04Z",
+          "updated_at": "2023-12-30T04:35:29Z",
+          "html_url": "https://github.com/moment/moment/pull/6195#issuecomment-1872438219",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "Anjaa84"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "a874c597-dbb0-40ff-a0b5-c6981501b4d3",
+      "repo_name": "moment/moment",
+      "pr_number": 6200,
+      "title": "En-gi",
+      "state": "open",
+      "author": {
+        "username": "nathannorrisfairsailcom",
+        "id": 16938625,
+        "profile_url": "https://github.com/nathannorrisfairsailcom"
+      },
+      "created_at": "2024-01-10T12:08:02Z",
+      "updated_at": "2024-07-12T05:26:27Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Creating a locale for English (Gibraltar) ",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2173902272,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-07-12T05:26:27Z",
+          "commit_id": "5adff44c3639e325e611acd5c0ffc33e6ee95669",
+          "html_url": "https://github.com/moment/moment/pull/6200#pullrequestreview-2173902272",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1884728427,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": " <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6200/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\"></a><br/><br /><ul><li><a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6200/#/?version=2' target='_blank'>:x:</a> - login: @nathannorrisfairsailcom / name: Nathan Norris . The commit (5adff44c3639e325e611acd5c0ffc33e6ee95669, 196e3a68c621245bc629121e48ff8c8d99e3eb1d) is not authorized under a signed CLA. <a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6200/#/?version=2' target='_blank'>Please click here to be authorized</a>. For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul>",
+          "created_at": "2024-01-10T12:08:10Z",
+          "updated_at": "2024-02-18T12:39:16Z",
+          "html_url": "https://github.com/moment/moment/pull/6200#issuecomment-1884728427",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "a60c813a-50bb-4ff8-bfef-0705c65f1e74",
+      "repo_name": "moment/moment",
+      "pr_number": 6208,
+      "title": "[bugfix] KO L date format",
+      "state": "closed",
+      "author": {
+        "username": "michalbencur",
+        "id": 664959,
+        "profile_url": "https://github.com/michalbencur"
+      },
+      "created_at": "2024-02-15T12:39:04Z",
+      "updated_at": "2024-06-04T09:50:17Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Date format in Korea is YYYY-MM-DD instead of YYYY.MM.DD.\r\nSee date format here: https://en.wikipedia.org/wiki/Date_and_time_notation_in_South_Korea\r\n\r\n@ichernev",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 1897412927,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-02-23T05:55:00Z",
+          "commit_id": "752833412f544edd30dc4b7ff64014f88e3cd4d3",
+          "html_url": "https://github.com/moment/moment/pull/6208#pullrequestreview-1897412927",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "7efbe7ef-6121-4e29-9c8e-0619ffa420ec",
+      "repo_name": "moment/moment",
+      "pr_number": 6217,
+      "title": "[locale] Fixed ('L') format for Georgian and Flemish (Belgium Dutch).",
+      "state": "open",
+      "author": {
+        "username": "adidaslevy",
+        "id": 6115496,
+        "profile_url": "https://github.com/adidaslevy"
+      },
+      "created_at": "2024-03-11T11:19:59Z",
+      "updated_at": "2024-07-21T12:19:26Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Done according to:\r\nGeorgian: https://www.localeplanet.com/icu/ka/index.html \r\nDutch(Belgium): https://www.localeplanet.com/icu/nl-BE/index.html",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2168055964,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-07-10T05:19:01Z",
+          "commit_id": "48ef21871812dda87c24a3e80f8d8b8085c88430",
+          "html_url": "https://github.com/moment/moment/pull/6217#pullrequestreview-2168055964",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 1988205676,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: adidaslevy  (f263776bd4bc7a5acd2cac8de4014015bd532848)</li><li>:white_check_mark: login: adilevy-em / name: Adi Levy  (48ef21871812dda87c24a3e80f8d8b8085c88430)</li></ul>",
+          "created_at": "2024-03-11T11:20:05Z",
+          "updated_at": "2024-03-11T14:16:39Z",
+          "html_url": "https://github.com/moment/moment/pull/6217#issuecomment-1988205676",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 1988232048,
+          "commenter_username": "adidaslevy",
+          "commenter_id": 6115496,
+          "commenter_profile_url": "https://github.com/adidaslevy",
+          "body": "Hi @ichernev I made sure to pass all the checks and gates for this PR. \r\nWhat happens next? ",
+          "created_at": "2024-03-11T11:32:32Z",
+          "updated_at": "2024-03-11T11:32:32Z",
+          "html_url": "https://github.com/moment/moment/pull/6217#issuecomment-1988232048",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 2241590809,
+          "commenter_username": "adidaslevy",
+          "commenter_id": 6115496,
+          "commenter_profile_url": "https://github.com/adidaslevy",
+          "body": "Hi @anandfresh, Upon approval - what is going to happen now? ",
+          "created_at": "2024-07-21T12:19:25Z",
+          "updated_at": "2024-07-21T12:19:25Z",
+          "html_url": "https://github.com/moment/moment/pull/6217#issuecomment-2241590809",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 3,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "808913c9-bd1e-4e1c-ab29-99727c02db9a",
+      "repo_name": "moment/moment",
+      "pr_number": 6219,
+      "title": "[locale] Change Saat to Saa in dist/locale/sw.js",
+      "state": "closed",
+      "author": {
+        "username": "Louq-Tech",
+        "id": 144584573,
+        "profile_url": "https://github.com/Louq-Tech"
+      },
+      "created_at": "2024-03-14T13:41:05Z",
+      "updated_at": "2024-09-05T08:36:34Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Typing error, in swahili time is \"Saa\" and not \"Saat\"",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2164999127,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-07-09T04:54:45Z",
+          "commit_id": "50ea397d970ae1e9cccec2cd5eb7b849d3f76f19",
+          "html_url": "https://github.com/moment/moment/pull/6219#pullrequestreview-2164999127",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "8b482301-1e41-4042-aea3-6e8331c955f4",
+      "repo_name": "moment/moment",
+      "pr_number": 6221,
+      "title": "Fix for issue #6202: Append 'null' as Return Type for toJSON Method in TypeScript Definitions",
+      "state": "open",
+      "author": {
+        "username": "utf26",
+        "id": 20674817,
+        "profile_url": "https://github.com/utf26"
+      },
+      "created_at": "2024-03-21T07:28:32Z",
+      "updated_at": "2025-01-27T18:44:51Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "This pull request addresses the issue raised in #6202, where the current TypeScript definitions for the `toJSON` method do not accurately reflect the possible return value of `null` for invalid date instances. As documented, the `toJSON` method returns a string representation of the moment object when valid and `null` when the moment object represents an invalid date. However, the existing TypeScript type definitions only indicate a string return type, leading to potential type mismatches and runtime errors in TypeScript applications.\r\n\r\n### Changes Made\r\n- Updated the TypeScript definitions for the `toJSON` method to include `null` as a possible return type. The method now correctly reflects its return type as `string | null`, aligning with the actual behavior of the `toJSON` method.\r\n\r\n### Impact\r\n- This change ensures that TypeScript users of moment.js have accurate type information, preventing type-related runtime errors when dealing with invalid date instances. It reinforces the reliability of TypeScript definitions in the moment.js library.\r\n\r\n### Testing\r\n- Added new test to verify that TypeScript correctly recognizes the updated return type of the `toJSON` method. This test ensure that no type errors occur when a moment object is invalid, and `toJSON` returns `null`.\r\n- All existing tests have been run to ensure that this change does not affect other functionalities or introduce regressions.\r\n\r\n### Additional Notes\r\n- This change is focused solely on updating the TypeScript definitions to match the current JavaScript implementation of the `toJSON` method. No changes were made to the method's implementation.\r\n\r\nBy accurately reflecting the `toJSON` method's behavior in the TypeScript definitions, this pull request aims to improve the development experience for TypeScript users of moment.js, ensuring type safety and consistency with the library's runtime behavior.\r\n\r\nResolves #6202.\r\n",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2187268876,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-07-19T04:16:49Z",
+          "commit_id": "2687a27e3bcaaa52d7d68e4fe8703ccc43c7785a",
+          "html_url": "https://github.com/moment/moment/pull/6221#pullrequestreview-2187268876",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 2011374333,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6221/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\" ><br/><br ><ul><li>:x: login: @utf26 /  The commit (2687a27e3bcaaa52d7d68e4fe8703ccc43c7785a). This user is authorized, but they must confirm their affiliation with their company. Start the authorization process <a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6221/#/?version=2' target='_blank'> by clicking here</a>, click \\\"Corporate\\\", select the appropriate company from the list, then confirm your affiliation on the page that appears. For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul>",
+          "created_at": "2024-03-21T07:28:35Z",
+          "updated_at": "2025-01-27T18:44:51Z",
+          "html_url": "https://github.com/moment/moment/pull/6221#issuecomment-2011374333",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 2027191798,
+          "commenter_username": "abenhamdine",
+          "commenter_id": 7466144,
+          "commenter_profile_url": "https://github.com/abenhamdine",
+          "body": "It will probably break a lot of users codes, event if it's correct  \r\nsee the previous similar case, which has been reverted : https://github.com/moment/moment/commit/a52ffb2bd49fdef0149d13874e7aede361342198",
+          "created_at": "2024-03-29T12:43:06Z",
+          "updated_at": "2024-03-29T12:43:06Z",
+          "html_url": "https://github.com/moment/moment/pull/6221#issuecomment-2027191798",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "0ea8e5da-8965-4a3a-9eba-4b6a1bf72afc",
+      "repo_name": "moment/moment",
+      "pr_number": 6227,
+      "title": "bugfix/#6143",
+      "state": "open",
+      "author": {
+        "username": "AKHILREDDY1636",
+        "id": 52082621,
+        "profile_url": "https://github.com/AKHILREDDY1636"
+      },
+      "created_at": "2024-04-02T12:56:01Z",
+      "updated_at": "2024-07-07T17:09:45Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Issue #6143: In response to this issue, I've implemented a fix to ensure that moment.max validates the first argument as well as subsequent arguments before performing any comparisons. This ensures consistency and prevents potential errors when utilizing this function. The fix has been implemented and tested, and the changes are ready for review and merging.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2161894479,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-07-07T17:09:45Z",
+          "commit_id": "55f21bb48fa7d32e0d3bf407a790467dbf3cb18f",
+          "html_url": "https://github.com/moment/moment/pull/6227#pullrequestreview-2161894479",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 2031971822,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": " <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6227/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-missing-id.svg\" alt=\"CLA Missing ID\" align=\"left\" height=\"28\" width=\"328\"></a> <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6227/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\"></a><br/><br /><ul><li> :x: The email address for the commit (bb632e7b113cbda1dcc41fdec309f0610d6ae200) is not linked to the GitHub account, preventing the EasyCLA check. Consult <a href='https://confluence.linuxfoundation.org/pages/viewpage.action?pageId=86641302' target='_blank'>this Help Article</a> and <a href='https://help.github.com/en/github/committing-changes-to-your-project/why-are-my-commits-linked-to-the-wrong-user' target='_blank'>GitHub Help</a> to resolve. (To view the commit's email address, add .patch at the end of this PR page's URL.) For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li><li><a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6227/#/?version=2' target='_blank'>:x:</a> - login: @AKHILREDDY1636 / name: Akhil Reddy . The commit (55f21bb48fa7d32e0d3bf407a790467dbf3cb18f) is not authorized under a signed CLA. <a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6227/#/?version=2' target='_blank'>Please click here to be authorized</a>. For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul>",
+          "created_at": "2024-04-02T12:56:04Z",
+          "updated_at": "2024-04-02T12:56:04Z",
+          "html_url": "https://github.com/moment/moment/pull/6227#issuecomment-2031971822",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "a0330df2-46fe-4f19-a8c4-a895304f832b",
+      "repo_name": "moment/moment",
+      "pr_number": 6238,
+      "title": "[misc] refactor all object type checks in single file",
+      "state": "open",
+      "author": {
+        "username": "qzoke",
+        "id": 7318037,
+        "profile_url": "https://github.com/qzoke"
+      },
+      "created_at": "2024-06-19T07:37:27Z",
+      "updated_at": "2024-12-06T18:39:31Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "All the files in src/lib/utils that handled type checking have been merged into one file : src/lib/utils/check-object-type.js\r\n\r\nThis file now includes following functions :\r\nisArray(),\r\nisDate(),\r\nisFunction(),\r\nisNumber(),\r\nisObject(),\r\nisString(),\r\nisUndefined()",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2485618669,
+          "reviewer_username": "youneshenniwrites",
+          "reviewer_id": 26605247,
+          "reviewer_profile_url": "https://github.com/youneshenniwrites",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/26605247?u=a7377e4afaa7555f3c046612e9c5a089a83b3642&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2024-12-06T18:39:31Z",
+          "commit_id": "2c4082e7c4b52fe46e49ec26d2bd3e78f1353c52",
+          "html_url": "https://github.com/moment/moment/pull/6238#pullrequestreview-2485618669",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 1873832330,
+          "reviewer_username": "youneshenniwrites",
+          "reviewer_id": 26605247,
+          "reviewer_profile_url": "https://github.com/youneshenniwrites",
+          "body": "```suggestion\r\n   switch (true) {\r\n    case (diff < -6):\r\n        return 'sameElse';\r\n    case (diff < -1):\r\n        return 'lastWeek';\r\n    case (diff < 0):\r\n        return 'lastDay';\r\n    case (diff < 1):\r\n        return 'sameDay';\r\n    case (diff < 2):\r\n        return 'nextDay';\r\n    case (diff < 7):\r\n        return 'nextWeek';\r\n    default:\r\n        return 'sameElse';\r\n    }\r\n```",
+          "created_at": "2024-12-06T18:39:31Z",
+          "updated_at": "2024-12-06T18:39:31Z",
+          "path": "src/lib/moment/calendar.js",
+          "line": 24,
+          "diff_hunk": "@@ -1,25 +1,27 @@\n import { createLocal } from '../create/local';\n import { cloneWithOffset } from '../units/offset';\n-import isFunction from '../utils/is-function';\n+import { isFunction } from '../utils/check-object-type';\n import { hooks } from '../utils/hooks';\n import { isMomentInput } from '../utils/is-moment-input';\n import isCalendarSpec from '../utils/is-calendar-spec';\n \n export function getCalendarFormat(myMoment, now) {\n     var diff = myMoment.diff(now, 'days', true);\n-    return diff < -6\n-        ? 'sameElse'\n-        : diff < -1\n-          ? 'lastWeek'\n-          : diff < 0\n-            ? 'lastDay'\n-            : diff < 1\n-              ? 'sameDay'\n-              : diff < 2\n-                ? 'nextDay'\n-                : diff < 7\n-                  ? 'nextWeek'\n-                  : 'sameElse';\n+    if (diff < -6) {\n+        return 'sameElse';\n+    } else if (diff < -1) {\n+        return 'lastWeek';\n+    } else if (diff < 0) {\n+        return 'lastDay';\n+    } else if (diff < 1) {\n+        return 'sameDay';\n+    } else if (diff < 2) {\n+        return 'nextDay';\n+    } else if (diff < 7) {\n+        return 'nextWeek';\n+    } else {\n+        return 'sameElse';\n+    }",
+          "html_url": "https://github.com/moment/moment/pull/6238#discussion_r1873832330",
+          "author_association": "NONE",
+          "in_reply_to_id": null
+        }
+      ],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 1,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "youneshenniwrites"
+        ],
+        "approval_count": 0,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "5fdf56d1-6c8f-42c6-8e4b-7d05fc894573",
+      "repo_name": "moment/moment",
+      "pr_number": 6241,
+      "title": "misc: add libraries link to readme",
+      "state": "closed",
+      "author": {
+        "username": "cwtuan",
+        "id": 3455798,
+        "profile_url": "https://github.com/cwtuan"
+      },
+      "created_at": "2024-06-28T12:54:09Z",
+      "updated_at": "2024-07-13T06:23:27Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "\"moment\" is now considered a legacy project, I have prepared a pull request to update the documentation. \r\n\r\nThis update includes recommendations for modern alternatives such as js-joda, date-fns, dayjs, and luxon. These libraries offer more up-to-date functionality and better performance for contemporary applications.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2161894345,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-07-07T17:08:31Z",
+          "commit_id": "380691c90092d40df41bd556a74750afc7e043c8",
+          "html_url": "https://github.com/moment/moment/pull/6241#pullrequestreview-2161894345",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 2196841257,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ><br ><ul><li>:white_check_mark:login: cwtuan / (380691c90092d40df41bd556a74750afc7e043c8)</li></ul><br>The committers listed above are authorized under a signed CLA.",
+          "created_at": "2024-06-28T12:54:13Z",
+          "updated_at": "2024-06-28T13:15:06Z",
+          "html_url": "https://github.com/moment/moment/pull/6241#issuecomment-2196841257",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 2226793395,
+          "commenter_username": "gilmoreorless",
+          "commenter_id": 159415,
+          "commenter_profile_url": "https://github.com/gilmoreorless",
+          "body": "A list of libraries is already in the Project Status section of the proper documentation, which is linked in the sentence below your change.",
+          "created_at": "2024-07-13T06:23:26Z",
+          "updated_at": "2024-07-13T06:23:26Z",
+          "html_url": "https://github.com/moment/moment/pull/6241#issuecomment-2226793395",
+          "author_association": "MEMBER"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "c3cce1fa-8409-41d2-b063-7e9003238557",
+      "repo_name": "moment/moment",
+      "pr_number": 6249,
+      "title": "[locale] Italian capitalization",
+      "state": "closed",
+      "author": {
+        "username": "ZeroKun265",
+        "id": 64660715,
+        "profile_url": "https://github.com/ZeroKun265"
+      },
+      "created_at": "2024-08-14T17:12:19Z",
+      "updated_at": "2025-05-02T14:41:42Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Changed capitalization on it-ch and it locale to reflect the docs and english locale that are capitalized  \r\n\r\n(Also the commit messages say localitazion instead of capitalization i'm sorry i'm dumb hope that's not bad)\r\n\r\n###### it-ch\r\n@xfh \r\n\r\n###### it\r\n@aliem\r\n@nostalgiaz \r\n\r\nI couldn't tag them all because some deleted their accounts i think?",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2288762363,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-09-09T03:42:29Z",
+          "commit_id": "e2947a93696a183756e8c6047b02bb8784cb340b",
+          "html_url": "https://github.com/moment/moment/pull/6249#pullrequestreview-2288762363",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 2289452172,
+          "commenter_username": "xfh",
+          "commenter_id": 9366771,
+          "commenter_profile_url": "https://github.com/xfh",
+          "body": "I am not a native Italian speaker, but many search result suggest that months and days of the week are not capitalised in Italian. What's your motivation for this change?",
+          "created_at": "2024-08-14T17:45:21Z",
+          "updated_at": "2024-08-14T17:45:21Z",
+          "html_url": "https://github.com/moment/moment/pull/6249#issuecomment-2289452172",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 2289511578,
+          "commenter_username": "ZeroKun265",
+          "commenter_id": 64660715,
+          "commenter_profile_url": "https://github.com/ZeroKun265",
+          "body": "I'm a native italian speaker and honestly don't think there's a rule about capitalization. It's not necessary, meaning that typing sabato or Sabato is the same really, i don't know if it's the same in english or not.\r\nThe reason was that the docs showed all names being capitalized in english and i wanted it to be consistent\r\n\r\nI know some of the other authors are native speakers so i wouldn't mind their opinion on this as i'm not an expert in linguistics or anything like that",
+          "created_at": "2024-08-14T18:13:09Z",
+          "updated_at": "2024-08-14T18:13:09Z",
+          "html_url": "https://github.com/moment/moment/pull/6249#issuecomment-2289511578",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "07d41866-2f5d-4693-a431-e09efd9a9f4d",
+      "repo_name": "moment/moment",
+      "pr_number": 6257,
+      "title": "duration function changed",
+      "state": "open",
+      "author": {
+        "username": "skjha80195",
+        "id": 125111946,
+        "profile_url": "https://github.com/skjha80195"
+      },
+      "created_at": "2024-09-29T09:26:12Z",
+      "updated_at": "2024-10-13T17:24:04Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "i have changed duration function check if it is feasible then apply in as a new function",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2364960353,
+          "reviewer_username": "anandfresh",
+          "reviewer_id": 45815625,
+          "reviewer_profile_url": "https://github.com/anandfresh",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/45815625?u=7a38af538bd0415ed4b793a6ef13644a6472a6f3&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-10-13T17:24:03Z",
+          "commit_id": "7ad4a0b0c7a3fa31b5ba0f2f9794b74cc3bda278",
+          "html_url": "https://github.com/moment/moment/pull/6257#pullrequestreview-2364960353",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 2381281087,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": " <a href=\"https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6257/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-not-signed.svg\" alt=\"CLA Not Signed\" align=\"left\" height=\"28\" width=\"328\"></a><br/><br /><ul><li><a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6257/#/?version=2' target='_blank'>:x:</a> - login: @skjha80195 / name: Code Hosting Platform . The commit (7ad4a0b0c7a3fa31b5ba0f2f9794b74cc3bda278) is not authorized under a signed CLA. <a href='https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/19772872/1424470/6257/#/?version=2' target='_blank'>Please click here to be authorized</a>. For further assistance with EasyCLA, <a href='https://jira.linuxfoundation.org/servicedesk/customer/portal/4' target='_blank'>please submit a support request ticket</a>.</li></ul><!-- Date Modified: 2024-09-29 09:26:16.496139 -->",
+          "created_at": "2024-09-29T09:26:17Z",
+          "updated_at": "2024-09-29T09:26:17Z",
+          "html_url": "https://github.com/moment/moment/pull/6257#issuecomment-2381281087",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "anandfresh"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "a1bbbbdf-61b8-40c5-a20f-4f652a6a905a",
+      "repo_name": "moment/moment",
+      "pr_number": 6258,
+      "title": "[locale] fix apostrophe typo for ukrainian",
+      "state": "open",
+      "author": {
+        "username": "prasanna4567",
+        "id": 36727559,
+        "profile_url": "https://github.com/prasanna4567"
+      },
+      "created_at": "2024-10-04T12:14:56Z",
+      "updated_at": "2024-10-04T13:01:43Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Fixes #6182 ",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2348009344,
+          "reviewer_username": "zemlanin",
+          "reviewer_id": 711514,
+          "reviewer_profile_url": "https://github.com/zemlanin",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/711514?u=c3d5768c7c3d2f798b095425e644d3d5de597b72&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-10-04T13:01:43Z",
+          "commit_id": "894613a9687e3b3ee4d29fff53746ffc38c5564d",
+          "html_url": "https://github.com/moment/moment/pull/6258#pullrequestreview-2348009344",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 2393570229,
+          "commenter_username": "linux-foundation-easycla[bot]",
+          "commenter_id": 43480880,
+          "commenter_profile_url": "https://github.com/apps/linux-foundation-easycla",
+          "body": "<a href=\"https://easycla.lfx.linuxfoundation.org/#/?version=2\"><img src=\"https://s3.amazonaws.com/cla-project-logo-prod/cla-signed.svg\" alt=\"CLA Signed\" align=\"left\" height=\"28\" width=\"328\" ></a><br/><br />The committers listed above are authorized under a signed CLA.<ul><li>:white_check_mark: login: prasanna4567 / name: Lakshmi Prasanna Sabbella  (894613a9687e3b3ee4d29fff53746ffc38c5564d, 01b1e7fdcbd26077b219b15c8a03d0d267cc3c45)</li></ul><!-- Date Modified: 2024-10-04 12:54:13.184428 -->",
+          "created_at": "2024-10-04T12:15:00Z",
+          "updated_at": "2024-10-04T12:54:13Z",
+          "html_url": "https://github.com/moment/moment/pull/6258#issuecomment-2393570229",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 2393651791,
+          "commenter_username": "prasanna4567",
+          "commenter_id": 36727559,
+          "commenter_profile_url": "https://github.com/prasanna4567",
+          "body": "Maintainer: @ichernev \r\nReporter: @GeorgeSteshenko \r\nAuthors: @zemlanin @Oire \r\n\r\nHave referred to https://github.com/unicode-org/cldr/blob/main/common/main/uk.xml#L1930C24-L1930C32 and updated the character accordingly.\r\nPlease review.",
+          "created_at": "2024-10-04T12:58:13Z",
+          "updated_at": "2024-10-04T12:58:13Z",
+          "html_url": "https://github.com/moment/moment/pull/6258#issuecomment-2393651791",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "zemlanin"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "b374318b-4d69-4f28-8f12-01a3aff9dd0b",
+      "repo_name": "moment/moment",
+      "pr_number": 6293,
+      "title": "[misc] update readme, remove broken badges",
+      "state": "open",
+      "author": {
+        "username": "Electroid",
+        "id": 3238291,
+        "profile_url": "https://github.com/Electroid"
+      },
+      "created_at": "2025-03-08T00:20:40Z",
+      "updated_at": "2025-03-16T00:34:44Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Updates the readme to put more emphasis on the maintenance mode of the project. Also removes some images/badges that no longer work.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2688471298,
+          "reviewer_username": "KristjanESPERANTO",
+          "reviewer_id": 35647502,
+          "reviewer_profile_url": "https://github.com/KristjanESPERANTO",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/35647502?u=86a8e7320fffa5b73568e0b7c646fef2ceb1fb9b&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-03-16T00:34:44Z",
+          "commit_id": "fbde39e3f150e4a9c22f244effa95e92ca36cc3f",
+          "html_url": "https://github.com/moment/moment/pull/6293#pullrequestreview-2688471298",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "KristjanESPERANTO"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    }
+  ]
+}
