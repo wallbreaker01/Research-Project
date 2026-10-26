@@ -1,0 +1,2268 @@
+{
+  "metadata": {
+    "repository": "lodash/lodash",
+    "collection_date": "20251101_023812",
+    "total_prs_analyzed": 120,
+    "total_reviewers_found": 108,
+    "collection_parameters": {
+      "max_prs_fetched": 500,
+      "api_token_used": "github_pat_11AZSLY3Y..."
+    },
+    "split_type": "test",
+    "split_ratio": 0.19999999999999996,
+    "total_prs_in_split": 24,
+    "total_reviewers_in_split": 14
+  },
+  "pr_reviewer_data": [
+    {
+      "pr_id": "183fb0b1-e74b-4aa5-a3b6-2a53b4716156",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5866,
+      "title": "Clarify what arguments goes where.",
+      "state": "open",
+      "author": {
+        "username": "SimonLandeholm",
+        "id": 60341751,
+        "profile_url": "https://github.com/SimonLandeholm"
+      },
+      "created_at": "2024-05-24T09:27:34Z",
+      "updated_at": "2025-08-04T11:51:00Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2076716571,
+          "reviewer_username": "Trott",
+          "reviewer_id": 718899,
+          "reviewer_profile_url": "https://github.com/Trott",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/718899?u=d8a77b28610eec920d8744ed76d3f625e3f06a48&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2024-05-24T11:57:36Z",
+          "commit_id": "1744176d3f336229edbed749944dbb11ca4f1947",
+          "html_url": "https://github.com/lodash/lodash/pull/5866#pullrequestreview-2076716571",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 3083835958,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:51:00Z",
+          "commit_id": "1744176d3f336229edbed749944dbb11ca4f1947",
+          "html_url": "https://github.com/lodash/lodash/pull/5866#pullrequestreview-3083835958",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 1613365463,
+          "reviewer_username": "Trott",
+          "reviewer_id": 718899,
+          "reviewer_profile_url": "https://github.com/Trott",
+          "body": "```suggestion\r\n * @param {Object} object The destination object. (The object without the default properties.)\r\n * @param {...Object} [sources] The source objects. (The object/objects denoting the default properties.)\r\n```",
+          "created_at": "2024-05-24T11:57:36Z",
+          "updated_at": "2024-05-24T11:57:36Z",
+          "path": "src/defaults.ts",
+          "line": 20,
+          "diff_hunk": "@@ -16,8 +16,8 @@ const hasOwnProperty = objectProto.hasOwnProperty;\n  *\n  * @since 0.1.0\n  * @category Object\n- * @param {Object} object The destination object.\n- * @param {...Object} [sources] The source objects.\n+ * @param {Object} object The destination object. (the object without the default properties)\n+ * @param {...Object} [sources] The source objects. (the object/objects denoting the default properties)",
+          "html_url": "https://github.com/lodash/lodash/pull/5866#discussion_r1613365463",
+          "author_association": "NONE",
+          "in_reply_to_id": null
+        }
+      ],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 1,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "Trott",
+          "Cassieminkus1"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "4904058c-408e-404a-9720-a18df8ac773b",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5874,
+      "title": "fix: reduce when we use object with 'length' attribute",
+      "state": "open",
+      "author": {
+        "username": "baguse",
+        "id": 36828138,
+        "profile_url": "https://github.com/baguse"
+      },
+      "created_at": "2024-05-30T15:52:28Z",
+      "updated_at": "2025-08-04T11:50:28Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "#5870 \r\n\r\nThis PR is for fixing the related issue",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2112806743,
+          "reviewer_username": "rap1ds",
+          "reviewer_id": 429876,
+          "reviewer_profile_url": "https://github.com/rap1ds",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/429876?v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2024-06-12T11:57:10Z",
+          "commit_id": "bbbc6a25e31dbe93934c2106b940dd9e2febd5c4",
+          "html_url": "https://github.com/lodash/lodash/pull/5874#pullrequestreview-2112806743",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 3083834659,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:50:28Z",
+          "commit_id": "bbbc6a25e31dbe93934c2106b940dd9e2febd5c4",
+          "html_url": "https://github.com/lodash/lodash/pull/5874#pullrequestreview-3083834659",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 1636333202,
+          "reviewer_username": "rap1ds",
+          "reviewer_id": 429876,
+          "reviewer_profile_url": "https://github.com/rap1ds",
+          "body": "To me, this looks like a breaking change.\r\n\r\nThe current implementation works well for JS classes like this:\r\n\r\n```js\r\nclass Rectangle {\r\n  constructor(height, width) {\r\n    this.height = height;\r\n    this.width = width;\r\n  }\r\n}\r\n\r\n_.reduce(new Rectangle(100, 100), function(result, value, key) {\r\n  result[key] = value;\r\n  return result;\r\n}, {});\r\n```\r\n\r\nHowever, this change is now checking the constructor name, and `collection.constructor?.name === 'Object'` would return `false` to `Rectangle`, so it would probably break there.\r\n\r\nDisclaimer: I'm not associated with lodash, and I don't have commit rights to this repo. But decided to review since this PR was aiming to fix the bug I reported.",
+          "created_at": "2024-06-12T11:56:59Z",
+          "updated_at": "2024-06-12T11:58:30Z",
+          "path": "src/.internal/baseEach.ts",
+          "line": 16,
+          "diff_hunk": "@@ -13,7 +13,7 @@ function baseEach(collection, iteratee) {\n   if (collection == null) {\n     return collection\n   }\n-  if (!isArrayLike(collection)) {\n+  if (!isArrayLike(collection) || collection.constructor?.name === 'Object') {",
+          "html_url": "https://github.com/lodash/lodash/pull/5874#discussion_r1636333202",
+          "author_association": "NONE",
+          "in_reply_to_id": null
+        }
+      ],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 1,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "rap1ds",
+          "Cassieminkus1"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "2602597f-f6fe-491c-8045-4e3b861567b7",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5887,
+      "title": "feat: toPercent()",
+      "state": "closed",
+      "author": {
+        "username": "ianzone",
+        "id": 20043230,
+        "profile_url": "https://github.com/ianzone"
+      },
+      "created_at": "2024-06-18T17:50:13Z",
+      "updated_at": "2024-11-12T20:47:45Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "this function converts a fraction number to a string in percentage format. ",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2145875963,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2024-06-27T16:17:00Z",
+          "commit_id": "d2617a04714b87d0c83779c8359997f99c45ecdc",
+          "html_url": "https://github.com/lodash/lodash/pull/5887#pullrequestreview-2145875963",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 1657419220,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "body": "I will suggest to include tests to cover the usage of `minPrecision` and `maxPrecision`.",
+          "created_at": "2024-06-27T16:10:20Z",
+          "updated_at": "2024-06-27T16:17:00Z",
+          "path": "test/toPercent.spec.ts",
+          "line": 3,
+          "diff_hunk": "@@ -0,0 +1,15 @@\n+import toPercent from '../src/toPercent';\n+\n+describe('toPercent', () => {",
+          "html_url": "https://github.com/lodash/lodash/pull/5887#discussion_r1657419220",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 1657431910,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "body": "Note  that `minPrecision` and `maxPrecision` are not used, so this example generates an unxpected output:\r\n\r\n```\r\ntoPercent(12, 4, 7)\r\n// '1,200%'\r\n```\r\n\r\nIMO, seems like the output is very deterministic as the locals are not included, ref https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#using_locales.\r\n\r\n",
+          "created_at": "2024-06-27T16:16:56Z",
+          "updated_at": "2024-06-27T16:17:00Z",
+          "path": "src/toPercent.ts",
+          "line": 21,
+          "diff_hunk": "@@ -0,0 +1,27 @@\n+/**\n+ * Converts `fraction` to a percentage format string.\n+ *\n+ * @category Lang\n+ * @param {number} fraction The value to process.\n+ * @param {number} [minPrecision=0] - Minimum fraction digits, default is 0.\n+ * @param {number} [maxPrecision=2] - Maximum fraction digits, default is 2.\n+ * @returns {string} Returns the percentage string.\n+ * @example\n+ *\n+ * toPercent(0.2)\n+ * // => 20%\n+ *\n+ * toPercent(0.3333333)\n+ * // => 33.33%\n+ *\n+ * toPercent(0.2, 2)\n+ * // => 20.00%\n+ *\n+ */\n+export default function toPercent(fraction: number, minPrecision: number = 0, maxPrecision: number = 2) {",
+          "html_url": "https://github.com/lodash/lodash/pull/5887#discussion_r1657431910",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        }
+      ],
+      "general_comments": [
+        {
+          "comment_id": 2178355137,
+          "commenter_username": "UlisesGascon",
+          "commenter_id": 5110813,
+          "commenter_profile_url": "https://github.com/UlisesGascon",
+          "body": "I will suggest to include tests, [here](https://github.com/lodash/lodash/blob/main/test/inRange.spec.js) you can find an example from the `inRange()` function ([docs](https://lodash.com/docs/4.17.15#inRange)).",
+          "created_at": "2024-06-19T10:42:38Z",
+          "updated_at": "2024-06-19T10:42:38Z",
+          "html_url": "https://github.com/lodash/lodash/pull/5887#issuecomment-2178355137",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 2182420380,
+          "commenter_username": "ianzone",
+          "commenter_id": 20043230,
+          "commenter_profile_url": "https://github.com/ianzone",
+          "body": "I just added the test.",
+          "created_at": "2024-06-21T09:54:28Z",
+          "updated_at": "2024-06-21T09:54:28Z",
+          "html_url": "https://github.com/lodash/lodash/pull/5887#issuecomment-2182420380",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 2194266524,
+          "commenter_username": "ianzone",
+          "commenter_id": 20043230,
+          "commenter_profile_url": "https://github.com/ianzone",
+          "body": "Hi, is it ok?",
+          "created_at": "2024-06-27T09:54:29Z",
+          "updated_at": "2024-06-27T09:54:29Z",
+          "html_url": "https://github.com/lodash/lodash/pull/5887#issuecomment-2194266524",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 2,
+        "total_general_comments": 3,
+        "unique_reviewers": [
+          "UlisesGascon"
+        ],
+        "approval_count": 0,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "55930148-1002-4265-ba9c-37fec168c783",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5915,
+      "title": "test: fix union test grammar errors",
+      "state": "open",
+      "author": {
+        "username": "gweesin",
+        "id": 42909374,
+        "profile_url": "https://github.com/gweesin"
+      },
+      "created_at": "2024-08-10T15:52:27Z",
+      "updated_at": "2024-10-13T12:17:54Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "maybe be caused by lint errors before",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2259634117,
+          "reviewer_username": "Playgirlkaybraz11",
+          "reviewer_id": 170968903,
+          "reviewer_profile_url": "https://github.com/Playgirlkaybraz11",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/170968903?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "#252 #5872 #5872 #5605 ",
+          "submitted_at": "2024-08-26T03:17:39Z",
+          "commit_id": "a09cb0de3d099b9626a29d2607764bf2566d4e63",
+          "html_url": "https://github.com/lodash/lodash/pull/5915#pullrequestreview-2259634117",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 2259656890,
+          "reviewer_username": "Princetagusor",
+          "reviewer_id": 179426934,
+          "reviewer_profile_url": "https://github.com/Princetagusor",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/179426934?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2024-08-26T03:35:20Z",
+          "commit_id": "a09cb0de3d099b9626a29d2607764bf2566d4e63",
+          "html_url": "https://github.com/lodash/lodash/pull/5915#pullrequestreview-2259656890",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "Playgirlkaybraz11",
+          "Princetagusor"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "121c8073-6fd7-465a-9578-5fc4071d448b",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5968,
+      "title": "fix outdated links related to Open JS Foundation",
+      "state": "open",
+      "author": {
+        "username": "clarkepeterf",
+        "id": 59657152,
+        "profile_url": "https://github.com/clarkepeterf"
+      },
+      "created_at": "2025-02-24T12:59:41Z",
+      "updated_at": "2025-03-15T00:37:15Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Fixes https://github.com/lodash/lodash/issues/5967",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2637844407,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-02-24T17:02:29Z",
+          "commit_id": "82fd4d9bfdde7c8c59594f56a4e52b39429e7210",
+          "html_url": "https://github.com/lodash/lodash/pull/5968#pullrequestreview-2637844407",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 2687126413,
+          "reviewer_username": "bjohansebas",
+          "reviewer_id": 103585995,
+          "reviewer_profile_url": "https://github.com/bjohansebas",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/103585995?u=cba3c1127b21e66ffdae76eb39dbcee884c1c141&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-03-15T00:37:14Z",
+          "commit_id": "82fd4d9bfdde7c8c59594f56a4e52b39429e7210",
+          "html_url": "https://github.com/lodash/lodash/pull/5968#pullrequestreview-2687126413",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 2679154016,
+          "commenter_username": "clarkepeterf",
+          "commenter_id": 59657152,
+          "commenter_profile_url": "https://github.com/clarkepeterf",
+          "body": "Just force-pushed over my commit because I accidentally made the original commit a [sign-off commit](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--s). Code changes remain the same.",
+          "created_at": "2025-02-24T17:19:56Z",
+          "updated_at": "2025-02-24T17:19:56Z",
+          "html_url": "https://github.com/lodash/lodash/pull/5968#issuecomment-2679154016",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "UlisesGascon",
+          "bjohansebas"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "3d6f8558-f42d-4e1e-aca9-6903a7e1c1ce",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5971,
+      "title": "Docs: Fix inconsistent terminology between reject and unescape functions",
+      "state": "open",
+      "author": {
+        "username": "vedant713",
+        "id": 66007382,
+        "profile_url": "https://github.com/vedant713"
+      },
+      "created_at": "2025-03-05T00:15:51Z",
+      "updated_at": "2025-08-04T11:48:56Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Fixes https://github.com/lodash/lodash/issues/5940\r\n\r\nThis PR addresses the inconsistent terminology in the documentation:\r\n\r\nreject was described as \"The opposite of _.filter\"\r\nunescape was described as \"The inverse of _.escape\"\r\nI've standardized the terminology to use \"opposite\" consistently across both functions to improve documentation clarity.\r\n\r\nThe issue also mentioned cross-referencing, but both functions already correctly reference each other with @see tags.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3083829541,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:48:56Z",
+          "commit_id": "dfb33d8c9e6a2969f2f53f726508e28163bec8aa",
+          "html_url": "https://github.com/lodash/lodash/pull/5971#pullrequestreview-3083829541",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "Cassieminkus1"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "220d43ab-d854-4d09-927e-c3ebf000d3a3",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5978,
+      "title": "Fix for 'Added Whitespace' issue in startCase method",
+      "state": "open",
+      "author": {
+        "username": "Rkverma94",
+        "id": 20418640,
+        "profile_url": "https://github.com/Rkverma94"
+      },
+      "created_at": "2025-03-30T15:30:22Z",
+      "updated_at": "2025-08-04T11:48:20Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Here is the pull request for the issue with fix for 'Added whitespace' for startCase method",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3083828022,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:48:20Z",
+          "commit_id": "0220b9890511518cafe653fb4b0f4d0c8027bcb8",
+          "html_url": "https://github.com/lodash/lodash/pull/5978#pullrequestreview-3083828022",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "Cassieminkus1"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "9c30ac55-f020-4d6a-993f-da2d54229516",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5987,
+      "title": "test: add tests for Number constants on isNumber",
+      "state": "open",
+      "author": {
+        "username": "frontman-git",
+        "id": 174184333,
+        "profile_url": "https://github.com/frontman-git"
+      },
+      "created_at": "2025-04-29T04:14:35Z",
+      "updated_at": "2025-06-05T14:26:44Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "According to the [official Lodash documentation](https://lodash.com/docs/#isNumber), `_.isNumber` should return `true` for `NaN`, `Infinity`, and `-Infinity`, but those cases were missing from the tests—this PR adds them.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 2872147968,
+          "reviewer_username": "Valera-Zaebal",
+          "reviewer_id": 212119888,
+          "reviewer_profile_url": "https://github.com/Valera-Zaebal",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/212119888?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-05-27T18:35:39Z",
+          "commit_id": "c92815017f608730e0f8e80a1284c4b9fbd86365",
+          "html_url": "https://github.com/lodash/lodash/pull/5987#pullrequestreview-2872147968",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "Valera-Zaebal"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "37bbef18-2581-40d6-827c-392d80f6b76c",
+      "repo_name": "lodash/lodash",
+      "pr_number": 5996,
+      "title": "test: add test for size with string input",
+      "state": "open",
+      "author": {
+        "username": "frontman-git",
+        "id": 174184333,
+        "profile_url": "https://github.com/frontman-git"
+      },
+      "created_at": "2025-06-05T15:04:14Z",
+      "updated_at": "2025-08-04T11:46:50Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Adds a test to verify that `_.size` correctly returns the length of string values.\r\n\r\nThis ensures that string inputs like `'hi'` return the expected length (2), aligning with Lodash documentation and behavior for string primitives.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3083823522,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:46:50Z",
+          "commit_id": "87b2d24b9b2d950da613ede798b5b140587366d5",
+          "html_url": "https://github.com/lodash/lodash/pull/5996#pullrequestreview-3083823522",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "Cassieminkus1"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "77cd0d06-d1ac-4ddf-b001-d630b8ea47d0",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6007,
+      "title": "fix: exclude NaN from isNumber (fixes #5981)",
+      "state": "open",
+      "author": {
+        "username": "ThivyaElangovan121121",
+        "id": 221477815,
+        "profile_url": "https://github.com/ThivyaElangovan121121"
+      },
+      "created_at": "2025-07-18T08:58:36Z",
+      "updated_at": "2025-08-04T13:30:06Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "- Handles both primitive and boxed NaNs.\r\n- Avoids calling Lodash methods inside Lodash internals — no recursion!\r\n- Safe across realms (e.g., iframes, VMs).\r\n- Avoids legacy quirks like ActiveX and non-standard behaviors.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3083822343,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:46:24Z",
+          "commit_id": "7caabbd4cc1e2d1bb5f7454c0d626ace7a2153d4",
+          "html_url": "https://github.com/lodash/lodash/pull/6007#pullrequestreview-3083822343",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 3145336481,
+          "commenter_username": "eglove",
+          "commenter_id": 3924176,
+          "commenter_profile_url": "https://github.com/eglove",
+          "body": "I've been in support of this for a very long time. Last time it came up they said this was on purpose because NaN is a number in spec? But it defeats the purpose of a utility library to begin with. If we weren't accounting for edge cases like this, we'd just write flippant off the cuff custom utils.",
+          "created_at": "2025-08-01T17:53:16Z",
+          "updated_at": "2025-08-04T13:30:06Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6007#issuecomment-3145336481",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "Cassieminkus1"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "8e8420c3-700a-48d4-957b-251bcf96fc36",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6008,
+      "title": "[Autofic] Security Patch 2025-07-19",
+      "state": "open",
+      "author": {
+        "username": "soonnae",
+        "id": 207389591,
+        "profile_url": "https://github.com/soonnae"
+      },
+      "created_at": "2025-07-19T07:52:29Z",
+      "updated_at": "2025-08-04T11:45:43Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "## 🔧 About This Pull Request\nThis patch was automatically created by **[AutoFiC](https://autofic.github.io)**,\nan open-source framework that combines **static analysis tools** with **AI-driven remediation**.\n\nUsing **Semgrep**, **CodeQL**, and **Snyk Code**, AutoFiC detected potential **security flaws** and applied **verified fixes**.\nEach patch includes **contextual explanations** powered by a **large language model** to support **review and decision-making**.\n\n## 🔐 Summary of Security Fixes\n### Overview\n\n> Detected by: **SEMGREP**\n\n| File | Total Issues |\n|------|---------------|\n| `perf/asset/perf-ui.js` | **1** |\n### 1. `perf/asset/perf-ui.js`\n#### 🧩 SAST Analysis Summary\n| Line | Type | Level | CWE | Ref |\n|----|----|-----|---|---|\n| 31~34 | Cross-Site-Scripting (XSS) | ⚠️ WARNING | CWE-79 | [🔗](https://owasp.org/www-community/attacks/xss/) |\n#### 📝 LLM Analysis\n\n#### 🔸 Vulnerability Description\nThe code constructs HTML strings using user-controlled data without proper sanitization. This can lead to Cross-Site Scripting (XSS) vulnerabilities if malicious scripts are injected through the `build` or `other` parameters.\n#### 🔸 Recommended Fix\nSanitize the user-controlled data before inserting it into the HTML string. This can be done by escaping special HTML characters to prevent script execution.\n#### 🔸 Additional Notes\nThe `escapeHtml` function is introduced to sanitize user inputs before they are used in HTML contexts, effectively mitigating the XSS vulnerability.\n\n## 🛠 Fix Summary\n\nAll identified **vulnerabilities** have been **remediated** following **security best practices** such as **parameterized queries** and **proper input validation**. Please refer to the **diff tab** for detailed **code changes**.\n\nIf you have **questions** or **feedback** regarding this **automated patch**, feel free to reach out via **[AutoFiC GitHub](https://github.com/autofic)**.\n",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3083820054,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:45:43Z",
+          "commit_id": "bbf2df189c6840628af8283090754ef3967ca559",
+          "html_url": "https://github.com/lodash/lodash/pull/6008#pullrequestreview-3083820054",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "Cassieminkus1"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "d15ea836-5ba1-48fe-96dd-8e43085d35eb",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6009,
+      "title": "docs: document behavior of zip functions with arrays of different lengths",
+      "state": "open",
+      "author": {
+        "username": "gingeekrishna",
+        "id": 25870086,
+        "profile_url": "https://github.com/gingeekrishna"
+      },
+      "created_at": "2025-07-21T16:44:03Z",
+      "updated_at": "2025-08-13T04:02:05Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": " document behavior of zip functions with arrays of different lengths\r\n- Add documentation for zip(), zipWith(), zipObject(), and zipObjectDeep()\r\n- Clarify that zip/zipWith iterate until longest array is exhausted\r\n- Explain that missing elements are filled with undefined\r\n- Document that zipObject/zipObjectDeep ignore extra values and assign undefined for extra props\r\n- Add examples showing behavior with arrays of different lengths\r\n\r\nFixes #6006",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3083818942,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-04T11:45:15Z",
+          "commit_id": "c73f995a7de713b25ad528eec3620b8345cd8b8f",
+          "html_url": "https://github.com/lodash/lodash/pull/6009#pullrequestreview-3083818942",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 3096035278,
+          "reviewer_username": "Cassieminkus1",
+          "reviewer_id": 164292316,
+          "reviewer_profile_url": "https://github.com/Cassieminkus1",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164292316?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-08-07T08:35:22Z",
+          "commit_id": "c73f995a7de713b25ad528eec3620b8345cd8b8f",
+          "html_url": "https://github.com/lodash/lodash/pull/6009#pullrequestreview-3096035278",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 3162661877,
+          "commenter_username": "gingeekrishna",
+          "commenter_id": 25870086,
+          "commenter_profile_url": "https://github.com/gingeekrishna",
+          "body": "is that any more changes required in this PR?",
+          "created_at": "2025-08-07T06:19:47Z",
+          "updated_at": "2025-08-07T06:19:47Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6009#issuecomment-3162661877",
+          "author_association": "NONE"
+        },
+        {
+          "comment_id": 3182098493,
+          "commenter_username": "gingeekrishna",
+          "commenter_id": 25870086,
+          "commenter_profile_url": "https://github.com/gingeekrishna",
+          "body": "@Cassieminkus1 is that any reason my PR is still pending to merge?",
+          "created_at": "2025-08-13T04:02:05Z",
+          "updated_at": "2025-08-13T04:02:05Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6009#issuecomment-3182098493",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "Cassieminkus1"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "d368a75c-d0a7-416a-a335-e1923da8ac84",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6012,
+      "title": "Fix make _.isNumber(NaN) return false and update tests",
+      "state": "open",
+      "author": {
+        "username": "Rishiyaduwanshi",
+        "id": 115349543,
+        "profile_url": "https://github.com/Rishiyaduwanshi"
+      },
+      "created_at": "2025-08-26T21:07:11Z",
+      "updated_at": "2025-09-13T04:46:46Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "### 📌 Fix: `_.isNumber(NaN)` now returns `false` as expected (Fixes #5981)\r\n\r\n#### 🐛 The Issue\r\nIn Lodash v4.17.21, the `_.isNumber` function incorrectly returns `true` for `NaN`. This is problematic in scenarios where consumers of the library want to distinguish valid numbers from `NaN`.\r\n\r\n**Reference:** [Issue #5981](https://github.com/lodash/lodash/issues/5981)\r\n\r\n#### ✅ The Fix\r\nThe `isNumber` function has been updated to return `false` when the input is `NaN`. The logic now ensures that:\r\n- Primitive `NaN` values are filtered out.\r\n- Boxed `NaN` values (e.g., `Object(NaN)`) are also handled appropriately.\r\n\r\n```js\r\n    function isNumber(value) {\r\n      return (typeof value == 'number' && !Number.isNaN(value)) ||  \r\n             (isObjectLike(value) && baseGetTag(value) == numberTag);\r\n    }\r\n```\r\n\r\n#### 🧪 Tests Updated\r\n- Updated test case: `assert.strictEqual(_.isNumber(NaN), false);`\r\n- Verified against full test suite using `pnpm test`.\r\n- All tests passing ✅\r\n\r\n\r\n",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3219509751,
+          "reviewer_username": "utkarshSinha1910",
+          "reviewer_id": 164741609,
+          "reviewer_profile_url": "https://github.com/utkarshSinha1910",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/164741609?v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-09-13T04:46:46Z",
+          "commit_id": "5488b55cda5fcd4a5323c2d527b48301246fc62f",
+          "html_url": "https://github.com/lodash/lodash/pull/6012#pullrequestreview-3219509751",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "utkarshSinha1910"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "d863e01c-af39-476a-9125-ebf79e3300e4",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6021,
+      "title": "Add  CI pipeline to run tests on modern browsers",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-11T11:34:41Z",
+      "updated_at": "2025-10-27T10:20:38Z",
+      "merged_at": "2025-10-27T10:20:37Z",
+      "merged_by": null,
+      "description": "### Main Changes\r\nThis PR includes a new pipeline and config files to run Playwright and execute the existing tests on a browser environment with a simple expect to confirm that all the tests are passing\r\n\r\n### Assumptions\r\n- We want to run all the html files in `/test/*.html` and not only `/test/index.html`\r\n- The browser matrix is not yet confirmed, just a mock to test the pipeline.\r\n- All the new dependencies related to playwright and playwright itself are installed and configured when running the pipeline so no modification was done on the package files. So, this limit the local running options, we can document this step for local running or include the dependencies within the project (let me know what you prefer)\r\n\r\n### Context\r\n- Related https://github.com/lodash/lodash/issues/6019",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3327010437,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-11T11:38:54Z",
+          "commit_id": "949c41df76c28873621237eaa2676783dda1473a",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#pullrequestreview-3327010437",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3382762441,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:19:25Z",
+          "commit_id": "949c41df76c28873621237eaa2676783dda1473a",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#pullrequestreview-3382762441",
+          "author_association": "MEMBER"
+        },
+        {
+          "review_id": 3382765372,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:20:18Z",
+          "commit_id": "949c41df76c28873621237eaa2676783dda1473a",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#pullrequestreview-3382765372",
+          "author_association": "MEMBER"
+        },
+        {
+          "review_id": 3382765602,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:20:23Z",
+          "commit_id": "949c41df76c28873621237eaa2676783dda1473a",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#pullrequestreview-3382765602",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 2422753985,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "body": "I just started with this matrix as an idea, but this is not representing the reality. Please confirm the expected Matrix :pray: ",
+          "created_at": "2025-10-11T11:38:10Z",
+          "updated_at": "2025-10-11T11:38:54Z",
+          "path": "playwright.config.js",
+          "line": 27,
+          "diff_hunk": "@@ -0,0 +1,28 @@\n+const { devices } = require('@playwright/test');\n+\n+module.exports = {\n+    retries: 0,\n+    testDir: './test',\n+    testMatch: '**/*.spec.js',\n+    use: {\n+        baseURL: 'http://localhost:9001',\n+        headless: true,\n+    },\n+    projects: [\n+        { name: 'Chromium', use: { browserName: 'chromium' } },\n+        { name: 'Firefox', use: { browserName: 'firefox' } },\n+        { name: 'WebKit', use: { browserName: 'webkit' } },\n+        {\n+            name: 'Microsoft Edge',\n+            use: { browserName: 'chromium', channel: 'msedge' },\n+        },\n+        {\n+            name: 'Mobile Safari',\n+            use: { ...devices['iPhone 12'], browserName: 'webkit' },\n+        },\n+        {\n+            name: 'Mobile Chrome',\n+            use: { ...devices['Pixel 5'], browserName: 'chromium' },\n+        },\n+    ],",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#discussion_r2422753985",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2422754264,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "body": "Very open to feedback, maybe there is a more elegant way to run this expect",
+          "created_at": "2025-10-11T11:38:52Z",
+          "updated_at": "2025-10-11T11:38:54Z",
+          "path": "test/playwright-runner.spec.js",
+          "line": 7,
+          "diff_hunk": "@@ -0,0 +1,23 @@\n+const { test, expect } = require('@playwright/test');\n+\n+test.describe.configure({ mode: 'parallel' });\n+\n+test('index', async ({ page }) => {\n+  await page.goto('http://localhost:9001/test/index.html');\n+  await expect(page.locator('text=0 failed')).toBeVisible({ timeout: 60000 });",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#discussion_r2422754264",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2465124999,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "body": "This is a start and likely good enough with today's browsers. Mobile Chrome is likely extra extra here.",
+          "created_at": "2025-10-27T10:19:25Z",
+          "updated_at": "2025-10-27T10:19:25Z",
+          "path": "playwright.config.js",
+          "line": 27,
+          "diff_hunk": "@@ -0,0 +1,28 @@\n+const { devices } = require('@playwright/test');\n+\n+module.exports = {\n+    retries: 0,\n+    testDir: './test',\n+    testMatch: '**/*.spec.js',\n+    use: {\n+        baseURL: 'http://localhost:9001',\n+        headless: true,\n+    },\n+    projects: [\n+        { name: 'Chromium', use: { browserName: 'chromium' } },\n+        { name: 'Firefox', use: { browserName: 'firefox' } },\n+        { name: 'WebKit', use: { browserName: 'webkit' } },\n+        {\n+            name: 'Microsoft Edge',\n+            use: { browserName: 'chromium', channel: 'msedge' },\n+        },\n+        {\n+            name: 'Mobile Safari',\n+            use: { ...devices['iPhone 12'], browserName: 'webkit' },\n+        },\n+        {\n+            name: 'Mobile Chrome',\n+            use: { ...devices['Pixel 5'], browserName: 'chromium' },\n+        },\n+    ],",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#discussion_r2465124999",
+          "author_association": "MEMBER",
+          "in_reply_to_id": 2422753985
+        },
+        {
+          "comment_id": 2465127380,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "body": "I'll have a cleanup pass after to see if anything can be tweaked but I'm okay with it. All about incremental improvements. If we don't get it just right the first time. We'll keep tweaking.",
+          "created_at": "2025-10-27T10:20:18Z",
+          "updated_at": "2025-10-27T10:20:19Z",
+          "path": "test/playwright-runner.spec.js",
+          "line": 7,
+          "diff_hunk": "@@ -0,0 +1,23 @@\n+const { test, expect } = require('@playwright/test');\n+\n+test.describe.configure({ mode: 'parallel' });\n+\n+test('index', async ({ page }) => {\n+  await page.goto('http://localhost:9001/test/index.html');\n+  await expect(page.locator('text=0 failed')).toBeVisible({ timeout: 60000 });",
+          "html_url": "https://github.com/lodash/lodash/pull/6021#discussion_r2465127380",
+          "author_association": "MEMBER",
+          "in_reply_to_id": 2422754264
+        }
+      ],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 4,
+        "total_review_comments": 4,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "UlisesGascon",
+          "jdalton"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 3
+      }
+    },
+    {
+      "pr_id": "9f6955e2-7f66-439a-8e92-229854197bd7",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6022,
+      "title": "Add CI pipeline for Node",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-11T11:35:05Z",
+      "updated_at": "2025-10-27T10:31:53Z",
+      "merged_at": "2025-10-27T10:31:52Z",
+      "merged_by": null,
+      "description": "### Main Changes\r\nThis PR solve linting issues (c07419e) and introduce a new pipeline for running (`npm run validate`) against Node versions from 4 to 24\r\n\r\n\r\n### Assumptions\r\n- If this PR lands before Node@25 is available I will create a separate PR to include it in the Matrix, otherwise I will push that change once the version is ready.\r\n- The default npm version included in Node@5 has some weird conflicts with the lockfile, so I opted to define an specific npm version in that scenario.\r\n- I only included ubuntu considering that most of Lodash requirements are related to v8 and not Node.js API. So the CI take less to run and also the pipeline is cleaner.  \r\n\r\n\r\n### Context\r\n- Related https://github.com/lodash/lodash/issues/6019\r\n- The linting commit (c07419e) is also included in #6023 otherwise that PR will fail. ",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3368028992,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/12915163?u=5676e00f9b4097423d907c900338a61a5ae6cf56&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-23T02:13:57Z",
+          "commit_id": "65e29a32d9e5dd127dbbaf5ae4dfbdf18bcba800",
+          "html_url": "https://github.com/lodash/lodash/pull/6022#pullrequestreview-3368028992",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3382771446,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:21:51Z",
+          "commit_id": "384c0dd123e9ede3fba736aef58896e167686150",
+          "html_url": "https://github.com/lodash/lodash/pull/6022#pullrequestreview-3382771446",
+          "author_association": "MEMBER"
+        },
+        {
+          "review_id": 3382772062,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:22:01Z",
+          "commit_id": "384c0dd123e9ede3fba736aef58896e167686150",
+          "html_url": "https://github.com/lodash/lodash/pull/6022#pullrequestreview-3382772062",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 2453740241,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "body": "```suggestion\n  pull_request:\n```\n\nThe wildcard is redundant for specifying all branches",
+          "created_at": "2025-10-23T02:05:48Z",
+          "updated_at": "2025-10-23T02:13:57Z",
+          "path": ".github/workflows/ci-node.yml",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,63 @@\n+name: CI Node.js\n+\n+on:\n+  push:\n+    branches: [ main ]\n+  pull_request:\n+    # Run on every PR, regardless of branch\n+    branches: [ '*' ]",
+          "html_url": "https://github.com/lodash/lodash/pull/6022#discussion_r2453740241",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2465131619,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "body": "We can talk about reducing these. Or doing \"one, two, skip a fews\" here, but for now it is something.",
+          "created_at": "2025-10-27T10:21:51Z",
+          "updated_at": "2025-10-27T10:31:49Z",
+          "path": ".github/workflows/ci-node.yml",
+          "line": 39,
+          "diff_hunk": "@@ -0,0 +1,61 @@\n+name: CI Node.js\n+\n+on:\n+  push:\n+    branches: [ main ]\n+  pull_request:\n+\n+jobs:\n+  test:\n+    name: Node.js ${{ matrix.node-version }} on ${{ matrix.os }}\n+    runs-on: ${{ matrix.os }}\n+    \n+    strategy:\n+      fail-fast: false\n+      matrix:\n+        os: [ubuntu-latest]\n+        node-version: [\n+          '4',\n+          '5',\n+          '6',\n+          '7',\n+          '8',\n+          '9',\n+          '10',\n+          '11',\n+          '12',\n+          '13',\n+          '14',\n+          '15',\n+          '16',\n+          '17',\n+          '18',\n+          '19',\n+          '20',\n+          '21',\n+          '22',\n+          '23',\n+          '24',\n+          '25'",
+          "html_url": "https://github.com/lodash/lodash/pull/6022#discussion_r2465131619",
+          "author_association": "MEMBER",
+          "in_reply_to_id": null
+        }
+      ],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 3,
+        "total_review_comments": 2,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "jdalton",
+          "jonchurch"
+        ],
+        "approval_count": 2,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "5de62f09-1fad-453d-8f07-39040f365a94",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6023,
+      "title": "Add CI pipeline for Bun",
+      "state": "open",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-11T11:35:22Z",
+      "updated_at": "2025-10-28T17:54:12Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "### Main Changes\r\n\r\nThis PR solve linting issues (c07419e) and introduce a new pipeline for running (`bun run validate`) against Bun versions from 1.0.0 to 1.3.0\r\n\r\n### Assumptions\r\n- I only included Ubuntu considering that most of Lodash requirements are related to JSC and not Bun API. So the CI take less to run and also the pipeline is cleaner.\r\n\r\n### Context\r\n- Related https://github.com/lodash/lodash/issues/6019\r\n- The linting commit (c07419e) is also included in #6022 otherwise that PR will fail.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3368069445,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/12915163?u=5676e00f9b4097423d907c900338a61a5ae6cf56&v=4",
+          "reviewer_type": "User",
+          "state": "CHANGES_REQUESTED",
+          "body": "",
+          "submitted_at": "2025-10-23T03:05:29Z",
+          "commit_id": "9a260699f94d9bf44331a831182221df916dc85c",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3368069445",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3382631589,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1199350?u=00eaf2103877b0b74a1cb23e26c20f1923faf100&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-27T09:48:24Z",
+          "commit_id": "f9912661893b95926af979734592e2a80bb6c031",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3382631589",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3382775316,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:22:58Z",
+          "commit_id": "9a260699f94d9bf44331a831182221df916dc85c",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3382775316",
+          "author_association": "MEMBER"
+        },
+        {
+          "review_id": 3385268598,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-27T20:07:12Z",
+          "commit_id": "f9912661893b95926af979734592e2a80bb6c031",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3385268598",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3389318670,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-28T15:13:01Z",
+          "commit_id": "09578fbe8af5af974799af6b08cf18de38942eee",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3389318670",
+          "author_association": "MEMBER"
+        },
+        {
+          "review_id": 3389405357,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-28T15:29:47Z",
+          "commit_id": "09578fbe8af5af974799af6b08cf18de38942eee",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3389405357",
+          "author_association": "MEMBER"
+        },
+        {
+          "review_id": 3389471241,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/12915163?u=5676e00f9b4097423d907c900338a61a5ae6cf56&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-28T15:41:36Z",
+          "commit_id": "09578fbe8af5af974799af6b08cf18de38942eee",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3389471241",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3389567969,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1199350?u=00eaf2103877b0b74a1cb23e26c20f1923faf100&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-28T16:00:10Z",
+          "commit_id": "09578fbe8af5af974799af6b08cf18de38942eee",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#pullrequestreview-3389567969",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 2453776298,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "body": "```suggestion\n        run: npm i --lockfile-version 3 --package-lock-only\n```\nhuh, `--frozen-lockfile` isn't a documented npm cli flag\n\nI know this is from the `bun install` error message but Im wondering if they made a mistake, this is a yarn flag for sure though\n\nIm guessing they wanted to  _only_ update the lockfile without installing anything, which is `--package-lock-only`. If they wanted `npm ci` type guard for not deviating from the lockfile, well `npm ci` and even `yarn --frozen-lockfile` wont write to the lockfile, so wouldnt do the version upgrade anyways.",
+          "created_at": "2025-10-23T02:39:32Z",
+          "updated_at": "2025-10-23T03:05:29Z",
+          "path": ".github/workflows/ci-bun.yml",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,36 @@\n+name: CI Bun\n+\n+on:\n+  push:\n+    branches: [ main ]\n+  pull_request:\n+    # Run on every PR, regardless of branch\n+    branches: [ '*' ]\n+\n+jobs:\n+  test:\n+    name: Bun CI\n+    runs-on: ubuntu-latest\n+    strategy:\n+      fail-fast: false\n+      matrix:\n+        bun-version: [1.0.0, 1.1.0, 1.2.0, 1.3.0]\n+\n+    steps:\n+      - name: Checkout code\n+        uses: actions/checkout@v4\n+\n+      - name: Setup Bun\n+        uses: oven-sh/setup-bun@v1\n+        with:\n+          bun-version: ${{ matrix.bun-version }}\n+\n+      # TODO: Remove this step once the lockfile has been updated to v3 in the repository\n+      - name: Install npm dependencies (lockfile v3)\n+        run: npm i --lockfile-version 3 --frozen-lockfile",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#discussion_r2453776298",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2453777533,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "body": "```suggestion\n  pull_request:\n```\n\nRedundant wildcard",
+          "created_at": "2025-10-23T02:40:46Z",
+          "updated_at": "2025-10-23T03:05:29Z",
+          "path": ".github/workflows/ci-bun.yml",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,36 @@\n+name: CI Bun\n+\n+on:\n+  push:\n+    branches: [ main ]\n+  pull_request:\n+    # Run on every PR, regardless of branch\n+    branches: [ '*' ]",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#discussion_r2453777533",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2465028916,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "body": "We shouldn't touch `dist` files in such PR.",
+          "created_at": "2025-10-27T09:48:23Z",
+          "updated_at": "2025-10-27T09:48:24Z",
+          "path": "dist/lodash.js",
+          "line": 3769,
+          "diff_hunk": "@@ -3766,7 +3766,7 @@\n           if (isArray(iteratee)) {\n             return function(value) {\n               return baseGet(value, iteratee.length === 1 ? iteratee[0] : iteratee);\n-            }\n+            };",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#discussion_r2465028916",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2465134847,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "body": "@jonchurch `--frozen-lockfile` is a `pnpm` thing 😸 ",
+          "created_at": "2025-10-27T10:22:58Z",
+          "updated_at": "2025-10-27T10:22:59Z",
+          "path": ".github/workflows/ci-bun.yml",
+          "line": null,
+          "diff_hunk": "@@ -0,0 +1,36 @@\n+name: CI Bun\n+\n+on:\n+  push:\n+    branches: [ main ]\n+  pull_request:\n+    # Run on every PR, regardless of branch\n+    branches: [ '*' ]\n+\n+jobs:\n+  test:\n+    name: Bun CI\n+    runs-on: ubuntu-latest\n+    strategy:\n+      fail-fast: false\n+      matrix:\n+        bun-version: [1.0.0, 1.1.0, 1.2.0, 1.3.0]\n+\n+    steps:\n+      - name: Checkout code\n+        uses: actions/checkout@v4\n+\n+      - name: Setup Bun\n+        uses: oven-sh/setup-bun@v1\n+        with:\n+          bun-version: ${{ matrix.bun-version }}\n+\n+      # TODO: Remove this step once the lockfile has been updated to v3 in the repository\n+      - name: Install npm dependencies (lockfile v3)\n+        run: npm i --lockfile-version 3 --frozen-lockfile",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#discussion_r2465134847",
+          "author_association": "MEMBER",
+          "in_reply_to_id": 2453776298
+        },
+        {
+          "comment_id": 2466936568,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "body": "Yeah! I needed to fix the linting issues first to verify that the pipeline is working. The commit c07419e ended up being merged as 4afb725803bd5cc94f0273ddc1f8f536efaea0b5 with #6022, so it’s no longer needed. I’ve merged the latest changes from `main`, so the PR is clean now! 👍",
+          "created_at": "2025-10-27T20:07:12Z",
+          "updated_at": "2025-10-27T20:07:12Z",
+          "path": "dist/lodash.js",
+          "line": 3769,
+          "diff_hunk": "@@ -3766,7 +3766,7 @@\n           if (isArray(iteratee)) {\n             return function(value) {\n               return baseGet(value, iteratee.length === 1 ? iteratee[0] : iteratee);\n-            }\n+            };",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#discussion_r2466936568",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": 2465028916
+        }
+      ],
+      "general_comments": [
+        {
+          "comment_id": 3453145732,
+          "commenter_username": "UlisesGascon",
+          "commenter_id": 5110813,
+          "commenter_profile_url": "https://github.com/UlisesGascon",
+          "body": "The CI errors is solved in https://github.com/lodash/lodash/pull/6033, I update the branch once that PR has landed :+1: ",
+          "created_at": "2025-10-27T20:19:54Z",
+          "updated_at": "2025-10-27T20:19:54Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#issuecomment-3453145732",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "comment_id": 3457767851,
+          "commenter_username": "UlisesGascon",
+          "commenter_id": 5110813,
+          "commenter_profile_url": "https://github.com/UlisesGascon",
+          "body": "Ready to merge :partying_face: ",
+          "created_at": "2025-10-28T17:54:12Z",
+          "updated_at": "2025-10-28T17:54:12Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6023#issuecomment-3457767851",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 8,
+        "total_review_comments": 5,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "falsyvalues",
+          "UlisesGascon",
+          "jdalton",
+          "jonchurch"
+        ],
+        "approval_count": 4,
+        "changes_requested_count": 1,
+        "comment_only_count": 3
+      }
+    },
+    {
+      "pr_id": "e38008e6-1925-4b86-b530-a14c5e478aea",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6025,
+      "title": "docs: add security escalation policy",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-11T16:42:41Z",
+      "updated_at": "2025-10-27T10:24:14Z",
+      "merged_at": "2025-10-27T10:24:14Z",
+      "merged_by": null,
+      "description": "ref: https://github.com/openjs-foundation/cross-project-council/pull/1588",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3382778769,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:23:59Z",
+          "commit_id": "7915f74651f3d5bcc7784384c8734a461fc33a2e",
+          "html_url": "https://github.com/lodash/lodash/pull/6025#pullrequestreview-3382778769",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "jdalton"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "480af916-b177-4e5d-80d8-a9503e62a2a1",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6026,
+      "title": "security: Include a threat model",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-11T17:32:44Z",
+      "updated_at": "2025-10-27T10:30:57Z",
+      "merged_at": "2025-10-27T10:30:57Z",
+      "merged_by": null,
+      "description": "### Main Changes\r\n\r\nThis PR include a new threat model (dadedacb12a74db6b572e95e69c5e442a3137759) and includes a new reference in the `SECURITY.md` (40bd77a63b253d82056ea9ee40a34ab4379c42ed)\r\n\r\nHeavily inspired in Webpack ([ref](https://github.com/webpack/security-wg/blob/main/docs/threat-model.md)) and Express ([ref](https://github.com/expressjs/security-wg/blob/main/docs/ThreatModel.md)) threat models. This is an early version with the idea to help us during the security triage process.\r\n\r\n**This PR is very open to feedback and suggestions.**\r\n\r\n### Context\r\n\r\nRelated to https://github.com/lodash/lodash/issues/6027",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3358829897,
+          "reviewer_username": "Sourojitbanerjee",
+          "reviewer_id": 181811476,
+          "reviewer_profile_url": "https://github.com/Sourojitbanerjee",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/181811476?u=055bf926a6e4fc1e85676b06bc8588cf5f9343c0&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "Hey @UlisesGascon, this addition looks really valuable, having a clear threat model definitely helps contributors understand Lodash’s security scope.\r\nA few small notes are that you could consider linking specific examples or scenarios under each “trust boundary” section in threat-model.md for clarity. Maybe add a brief note in SECURITY.md summarizing what the threat model covers (e.g., “out-of-scope: client-side misuse”) so readers get the gist without opening another file.\r\n",
+          "submitted_at": "2025-10-21T05:49:18Z",
+          "commit_id": "207837bd8ad9e3e9c6b1147e2de40dd2f4b2271b",
+          "html_url": "https://github.com/lodash/lodash/pull/6026#pullrequestreview-3358829897",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 3382804170,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:30:35Z",
+          "commit_id": "207837bd8ad9e3e9c6b1147e2de40dd2f4b2271b",
+          "html_url": "https://github.com/lodash/lodash/pull/6026#pullrequestreview-3382804170",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 3450573155,
+          "commenter_username": "jdalton",
+          "commenter_id": 4303,
+          "commenter_profile_url": "https://github.com/jdalton",
+          "body": "Thank you @UlisesGascon!, we can follow-up with tweaks to taste.",
+          "created_at": "2025-10-27T10:30:53Z",
+          "updated_at": "2025-10-27T10:30:53Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6026#issuecomment-3450573155",
+          "author_association": "MEMBER"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "jdalton",
+          "Sourojitbanerjee"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "44d4b9f2-b7bd-4899-b960-fb045adb4ae4",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6028,
+      "title": "Incident Response Plan",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-21T22:24:35Z",
+      "updated_at": "2025-10-27T10:26:16Z",
+      "merged_at": "2025-10-27T10:26:16Z",
+      "merged_by": null,
+      "description": "### Main Changes\r\n\r\nThis PR includes an Incident Response Plan (IRP) that is heavily inspired by [Express](https://github.com/expressjs/security-wg/blob/main/docs/incident_response_plan.md).\r\n\r\nThis is an early version intended to serve as a runbook to guide us during the security triage process.\r\n\r\n**This PR is very open to feedback and suggestions.**\r\n\r\n### Assumptions\r\n\r\n- A security triage team is in place, so this PR might need to wait until that process is finalized. This is currently being discussed in https://github.com/lodash/lodash/issues/6027.\r\n- The _private_ repository `lodash/security-triage` exists and can be used to handle discussions confidentially, since reporters in security advisories have access to all conversation threads — which is not always ideal.\r\n- The security triage team also uses the _private_ channel `#lodash-security-triage` for internal communications.\r\n- As Lodash does not have official social media accounts or a blog, we can request the foundation’s assistance to promote important security communications when necessary. Otherwise, we can limit announcements to release notes or create an issue to notify the community of an upcoming impactful security release (without sharing sensitive details to prevent early disclosure).\r\n\r\n\r\n### Context\r\n- It depends on the threat model, so this PR (https://github.com/lodash/lodash/pull/6026) should land first.\r\n- Related to https://github.com/lodash/lodash/issues/6027\r\n\r\n",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3382786873,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:26:03Z",
+          "commit_id": "108009b90c8c5b4f23476b3b0130abe32b2c9992",
+          "html_url": "https://github.com/lodash/lodash/pull/6028#pullrequestreview-3382786873",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 3450553612,
+          "commenter_username": "jdalton",
+          "commenter_id": 4303,
+          "commenter_profile_url": "https://github.com/jdalton",
+          "body": "Thank you @UlisesGascon!",
+          "created_at": "2025-10-27T10:26:13Z",
+          "updated_at": "2025-10-27T10:26:13Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6028#issuecomment-3450553612",
+          "author_association": "MEMBER"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "jdalton"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "66776daa-f5a1-466e-b5dc-619850c3de32",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6030,
+      "title": "Add support for OSSF scorecard reporting",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-21T22:33:00Z",
+      "updated_at": "2025-10-27T10:25:38Z",
+      "merged_at": "2025-10-27T10:25:38Z",
+      "merged_by": null,
+      "description": "### Main Changes\r\n\r\nThis pipeline will proactively report the status of the project (every day and when a push is done to `master` branch) including critical fields (`CI-Tests`, `Contributors`, `Dependency-Update-Tool`, `Webhooks`) that are missing while running via OSSF cron jobs. \r\n\r\n**Important**\r\n\r\n> It's also possible that some repositories in your organization are already being [automatically tracked](https://github.com/ossf/scorecard/blob/main/docs/faq.md#can-i-preview-my-projects-score) by OpenSSF in this [CSV file](https://github.com/ossf/scorecard/blob/main/cron/internal/data/projects.csv) via weekly cronjob. One caveat: Automatically tracked projects do not include https://github.com/ossf/scorecard/issues/3438 in their analysis (CI-Tests,Contributors,Dependency-Update-Tool,Webhooks). \r\n> _Source: [openssf-scorecard-monitor documentation](https://github.com/UlisesGascon/openssf-scorecard-monitor)_\r\n\r\n**Last Report: https://ossf.github.io/scorecard-visualizer/#/projects/github.com/lodash/lodash**\r\n\r\n### Context\r\n\r\nRelated to https://github.com/lodash/lodash/issues/6027",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3382783232,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:25:20Z",
+          "commit_id": "24eef2db97c5410ca7987217709587291d3b9c8b",
+          "html_url": "https://github.com/lodash/lodash/pull/6030#pullrequestreview-3382783232",
+          "author_association": "MEMBER"
+        },
+        {
+          "review_id": 3382784083,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:25:31Z",
+          "commit_id": "24eef2db97c5410ca7987217709587291d3b9c8b",
+          "html_url": "https://github.com/lodash/lodash/pull/6030#pullrequestreview-3382784083",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 2465141424,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "body": "^\r\n> 62b2cac7ed8198b15735ed49ab1e5cf35480ba46 # v2.4.0\r\n\r\nYes, yes, shas + # vX.Y.Z is a good way to handle actions.",
+          "created_at": "2025-10-27T10:25:19Z",
+          "updated_at": "2025-10-27T10:25:20Z",
+          "path": ".github/workflows/scorecards.yml",
+          "line": 41,
+          "diff_hunk": "@@ -0,0 +1,58 @@\n+name: Scorecard supply-chain security\n+on:\n+  # For Branch-Protection check. Only the default branch is supported. See\n+  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection\n+  branch_protection_rule:\n+  # To guarantee Maintained check is occasionally updated. See\n+  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained\n+  schedule:\n+    - cron: '20 7 * * 2'\n+  push:\n+    branches: [\"main\"]\n+\n+# Declare default permissions as read only.\n+permissions: read-all\n+\n+jobs:\n+  analysis:\n+    name: Scorecard analysis\n+    runs-on: ubuntu-latest\n+    permissions:\n+      # Needed to upload the results to code-scanning dashboard.\n+      security-events: write\n+      # Needed to publish results and get a badge (see publish_results below).\n+      id-token: write\n+      contents: read\n+      actions: read\n+      # To allow GraphQL ListCommits to work\n+      issues: read\n+      pull-requests: read\n+      # To detect SAST tools\n+      checks: read\n+\n+    steps:\n+      - name: \"Checkout code\"\n+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0\n+        with:\n+          persist-credentials: false\n+\n+      - name: \"Run analysis\"\n+        uses: ossf/scorecard-action@62b2cac7ed8198b15735ed49ab1e5cf35480ba46 # v2.4.0\n+        with:",
+          "html_url": "https://github.com/lodash/lodash/pull/6030#discussion_r2465141424",
+          "author_association": "MEMBER",
+          "in_reply_to_id": null
+        }
+      ],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 2,
+        "total_review_comments": 1,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "jdalton"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 1
+      }
+    },
+    {
+      "pr_id": "76adede3-5d5d-43b0-ac89-8adb77b22652",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6032,
+      "title": "feat: add CodeQL",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-21T22:37:53Z",
+      "updated_at": "2025-10-27T10:30:47Z",
+      "merged_at": "2025-10-27T10:29:42Z",
+      "merged_by": null,
+      "description": "### Main Changes\r\n\r\nThis PR introduces [CodeQL](https://codeql.github.com/) to the project\r\n\r\n### Context\r\n\r\nRelated to https://github.com/lodash/lodash/issues/6027",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3382799584,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-27T10:29:13Z",
+          "commit_id": "c647f99b0bf27db4131a4556daedf9e6170c89f7",
+          "html_url": "https://github.com/lodash/lodash/pull/6032#pullrequestreview-3382799584",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 3450568112,
+          "commenter_username": "jdalton",
+          "commenter_id": 4303,
+          "commenter_profile_url": "https://github.com/jdalton",
+          "body": "Thank you @UlisesGascon! Om nom nom :3",
+          "created_at": "2025-10-27T10:29:35Z",
+          "updated_at": "2025-10-27T10:29:35Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6032#issuecomment-3450568112",
+          "author_association": "MEMBER"
+        },
+        {
+          "comment_id": 3450572761,
+          "commenter_username": "github-advanced-security[bot]",
+          "commenter_id": 62310815,
+          "commenter_profile_url": "https://github.com/apps/github-advanced-security",
+          "body": "This pull request sets up GitHub code scanning for this repository. Once the scans have completed and the checks have passed, the analysis results for this pull request branch will appear on [this overview](/lodash/lodash/security/code-scanning?query=pr%3A6032+is%3Aopen). Once you merge this pull request, the 'Security' tab will show more code scanning analysis results (for example, for the default branch). Depending on your configuration and choice of analysis tool, future pull requests will be annotated with code scanning analysis results. For more information about GitHub code scanning, check out [the documentation](https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning). ",
+          "created_at": "2025-10-27T10:30:47Z",
+          "updated_at": "2025-10-27T10:30:47Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6032#issuecomment-3450572761",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 2,
+        "unique_reviewers": [
+          "jdalton"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "56b0c712-a6c6-45ae-998d-eb8a7335cb35",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6033,
+      "title": "Make the CI green again",
+      "state": "closed",
+      "author": {
+        "username": "UlisesGascon",
+        "id": 5110813,
+        "profile_url": "https://github.com/UlisesGascon"
+      },
+      "created_at": "2025-10-27T20:13:40Z",
+      "updated_at": "2025-10-28T15:12:29Z",
+      "merged_at": "2025-10-28T15:12:29Z",
+      "merged_by": null,
+      "description": "",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3389315164,
+          "reviewer_username": "jdalton",
+          "reviewer_id": 4303,
+          "reviewer_profile_url": "https://github.com/jdalton",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/4303?u=40f895568f8d01c8df41a7cc2cbf1975cded1df4&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-28T15:12:16Z",
+          "commit_id": "55faa907ddd0716fb853cce8bc35ad3207a108f8",
+          "html_url": "https://github.com/lodash/lodash/pull/6033#pullrequestreview-3389315164",
+          "author_association": "MEMBER"
+        }
+      ],
+      "review_comments": [],
+      "general_comments": [
+        {
+          "comment_id": 3456998469,
+          "commenter_username": "jdalton",
+          "commenter_id": 4303,
+          "commenter_profile_url": "https://github.com/jdalton",
+          "body": "Thank you @UlisesGascon!",
+          "created_at": "2025-10-28T15:12:24Z",
+          "updated_at": "2025-10-28T15:12:24Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6033#issuecomment-3456998469",
+          "author_association": "MEMBER"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 1,
+        "total_review_comments": 0,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "jdalton"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 0
+      }
+    },
+    {
+      "pr_id": "13f9a024-5910-4e5f-96d4-1d9dc196d452",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6035,
+      "title": "Add contributors section to README",
+      "state": "open",
+      "author": {
+        "username": "bensternthal",
+        "id": 198507,
+        "profile_url": "https://github.com/bensternthal"
+      },
+      "created_at": "2025-10-28T16:20:28Z",
+      "updated_at": "2025-10-29T22:51:17Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "Added contributors section with committers, security triage, and publishers.",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3389704371,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/12915163?u=5676e00f9b4097423d907c900338a61a5ae6cf56&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-28T16:24:38Z",
+          "commit_id": "38b422321e7585fb8bcba9bd252136ac7db1d20c",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#pullrequestreview-3389704371",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3389894063,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1199350?u=00eaf2103877b0b74a1cb23e26c20f1923faf100&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-28T17:08:28Z",
+          "commit_id": "38b422321e7585fb8bcba9bd252136ac7db1d20c",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#pullrequestreview-3389894063",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3389921002,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-28T17:14:21Z",
+          "commit_id": "38b422321e7585fb8bcba9bd252136ac7db1d20c",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#pullrequestreview-3389921002",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3392736898,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-29T10:57:57Z",
+          "commit_id": "6b85e460065f89c1d9f8edcc2f8df10cb6ac3d1c",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#pullrequestreview-3392736898",
+          "author_association": "CONTRIBUTOR"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 2470234294,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "body": "```suggestion\n- [@jonchurch](https://github.com/jonchurch)- Jon Church\n- [@jdalton](https://github.com/jdalton)- John-David Dalton\n- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascón\n- [@tobie](https://github.com/tobie) - Tobie Langel\n- [@falsyvalues](https://github.com/falseyvalues)- Michał Lipiński\n```\n\nFrom meeting feedback, we could just trim it down to even this. Just a list of names folks can expect to see active until we have more",
+          "created_at": "2025-10-28T16:24:38Z",
+          "updated_at": "2025-10-28T18:14:12Z",
+          "path": "README.md",
+          "line": null,
+          "diff_hunk": "@@ -78,3 +78,29 @@ Lodash is available in a [variety of builds](https://lodash.com/custom-builds) &\n  * [lodash-es](https://www.npmjs.com/package/lodash-es), [babel-plugin-lodash](https://www.npmjs.com/package/babel-plugin-lodash), & [lodash-webpack-plugin](https://www.npmjs.com/package/lodash-webpack-plugin)\n  * [lodash/fp](https://github.com/lodash/lodash/tree/npm/fp)\n  * [lodash-amd](https://www.npmjs.com/package/lodash-amd)\n+\n+## Contributors\n+\n+We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are assisting:\n+\n+### Committers\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon\n+- [@tobie](https://github.com/tobie) - Tobie Langel\n+- [@falseyvalues](https://github.com/falseyvalues)- Michał Lipińsk\n+\n+### Security Triage\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon\n+- [@ljharb](https://github.com/ljharb)- Jordan Harband\n+- [@falseyvalues](https://github.com/falseyvalues)- Michał Lipińsk",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#discussion_r2470234294",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2470368183,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "body": "```suggestion\r\n- [@falsyvalues](https://github.com/falsyvalues)- Michał Lipiński\r\n```",
+          "created_at": "2025-10-28T17:06:36Z",
+          "updated_at": "2025-10-28T17:08:28Z",
+          "path": "README.md",
+          "line": null,
+          "diff_hunk": "@@ -78,3 +78,29 @@ Lodash is available in a [variety of builds](https://lodash.com/custom-builds) &\n  * [lodash-es](https://www.npmjs.com/package/lodash-es), [babel-plugin-lodash](https://www.npmjs.com/package/babel-plugin-lodash), & [lodash-webpack-plugin](https://www.npmjs.com/package/lodash-webpack-plugin)\n  * [lodash/fp](https://github.com/lodash/lodash/tree/npm/fp)\n  * [lodash-amd](https://www.npmjs.com/package/lodash-amd)\n+\n+## Contributors\n+\n+We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are assisting:\n+\n+### Committers\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon\n+- [@tobie](https://github.com/tobie) - Tobie Langel\n+- [@falseyvalues](https://github.com/falseyvalues)- Michał Lipińsk",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#discussion_r2470368183",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2470368577,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "body": "```suggestion\r\n- [@falsyvalues](https://github.com/falsyvalues)- Michał Lipiński\r\n```",
+          "created_at": "2025-10-28T17:06:47Z",
+          "updated_at": "2025-10-28T17:08:28Z",
+          "path": "README.md",
+          "line": null,
+          "diff_hunk": "@@ -78,3 +78,29 @@ Lodash is available in a [variety of builds](https://lodash.com/custom-builds) &\n  * [lodash-es](https://www.npmjs.com/package/lodash-es), [babel-plugin-lodash](https://www.npmjs.com/package/babel-plugin-lodash), & [lodash-webpack-plugin](https://www.npmjs.com/package/lodash-webpack-plugin)\n  * [lodash/fp](https://github.com/lodash/lodash/tree/npm/fp)\n  * [lodash-amd](https://www.npmjs.com/package/lodash-amd)\n+\n+## Contributors\n+\n+We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are assisting:\n+\n+### Committers\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon\n+- [@tobie](https://github.com/tobie) - Tobie Langel\n+- [@falseyvalues](https://github.com/falseyvalues)- Michał Lipińsk\n+\n+### Security Triage\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon\n+- [@ljharb](https://github.com/ljharb)- Jordan Harband\n+- [@falseyvalues](https://github.com/falseyvalues)- Michał Lipińsk",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#discussion_r2470368577",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2470388013,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "body": "```suggestion\r\n- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascón\r\n```",
+          "created_at": "2025-10-28T17:13:32Z",
+          "updated_at": "2025-10-28T17:14:22Z",
+          "path": "README.md",
+          "line": null,
+          "diff_hunk": "@@ -78,3 +78,29 @@ Lodash is available in a [variety of builds](https://lodash.com/custom-builds) &\n  * [lodash-es](https://www.npmjs.com/package/lodash-es), [babel-plugin-lodash](https://www.npmjs.com/package/babel-plugin-lodash), & [lodash-webpack-plugin](https://www.npmjs.com/package/lodash-webpack-plugin)\n  * [lodash/fp](https://github.com/lodash/lodash/tree/npm/fp)\n  * [lodash-amd](https://www.npmjs.com/package/lodash-amd)\n+\n+## Contributors\n+\n+We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are assisting:\n+\n+### Committers\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#discussion_r2470388013",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2470389388,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "body": "```suggestion\r\n- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascón\r\n```",
+          "created_at": "2025-10-28T17:14:03Z",
+          "updated_at": "2025-10-28T17:14:22Z",
+          "path": "README.md",
+          "line": null,
+          "diff_hunk": "@@ -78,3 +78,29 @@ Lodash is available in a [variety of builds](https://lodash.com/custom-builds) &\n  * [lodash-es](https://www.npmjs.com/package/lodash-es), [babel-plugin-lodash](https://www.npmjs.com/package/babel-plugin-lodash), & [lodash-webpack-plugin](https://www.npmjs.com/package/lodash-webpack-plugin)\n  * [lodash/fp](https://github.com/lodash/lodash/tree/npm/fp)\n  * [lodash-amd](https://www.npmjs.com/package/lodash-amd)\n+\n+## Contributors\n+\n+We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are assisting:\n+\n+### Committers\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon\n+- [@tobie](https://github.com/tobie) - Tobie Langel\n+- [@falseyvalues](https://github.com/falseyvalues)- Michał Lipińsk\n+\n+### Security Triage\n+\n+- [@jonchurch](https://github.com/jonchurch)- Jon Church\n+- [@jdalton](https://github.com/jdalton)- John-David Dalton\n+- [@ulisesgascon](https://github.com/ulisesgascon)- Ulises Gascon",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#discussion_r2470389388",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        }
+      ],
+      "general_comments": [
+        {
+          "comment_id": 3464691091,
+          "commenter_username": "tobie",
+          "commenter_id": 3392,
+          "commenter_profile_url": "https://github.com/tobie",
+          "body": "This needs https://github.com/lodash/lodash/pull/6036 to be merged first.",
+          "created_at": "2025-10-29T22:51:17Z",
+          "updated_at": "2025-10-29T22:51:17Z",
+          "html_url": "https://github.com/lodash/lodash/pull/6035#issuecomment-3464691091",
+          "author_association": "NONE"
+        }
+      ],
+      "reviewer_summary": {
+        "total_reviews": 4,
+        "total_review_comments": 5,
+        "total_general_comments": 1,
+        "unique_reviewers": [
+          "falsyvalues",
+          "UlisesGascon",
+          "jonchurch"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 3
+      }
+    },
+    {
+      "pr_id": "b04d41f3-7fdd-4564-a66f-55f71fbc4c8c",
+      "repo_name": "lodash/lodash",
+      "pr_number": 6036,
+      "title": "Account for governance and maturity stage transition",
+      "state": "open",
+      "author": {
+        "username": "tobie",
+        "id": 3392,
+        "profile_url": "https://github.com/tobie"
+      },
+      "created_at": "2025-10-28T23:39:36Z",
+      "updated_at": "2025-10-29T22:49:42Z",
+      "merged_at": null,
+      "merged_by": null,
+      "description": "- Add GOVERNANCE.MD which lists TSC members\r\n- Add link from README to GOVERNANCE.md\r\n- Add callout on README about governance and maturity stage transition",
+      "labels": [],
+      "additions": 0,
+      "deletions": 0,
+      "changed_files_count": 0,
+      "is_draft": false,
+      "reviews": [
+        {
+          "review_id": 3391357104,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/12915163?u=5676e00f9b4097423d907c900338a61a5ae6cf56&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-29T01:08:20Z",
+          "commit_id": "ab6076e0949937e09775c54ea79abe714e247e55",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#pullrequestreview-3391357104",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3392390462,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1199350?u=00eaf2103877b0b74a1cb23e26c20f1923faf100&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-29T09:30:44Z",
+          "commit_id": "ab6076e0949937e09775c54ea79abe714e247e55",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#pullrequestreview-3392390462",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3392588925,
+          "reviewer_username": "tobie",
+          "reviewer_id": 3392,
+          "reviewer_profile_url": "https://github.com/tobie",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/3392?v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-29T10:21:45Z",
+          "commit_id": "ab6076e0949937e09775c54ea79abe714e247e55",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#pullrequestreview-3392588925",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 3392617979,
+          "reviewer_username": "tobie",
+          "reviewer_id": 3392,
+          "reviewer_profile_url": "https://github.com/tobie",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/3392?v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-29T10:28:42Z",
+          "commit_id": "ab6076e0949937e09775c54ea79abe714e247e55",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#pullrequestreview-3392617979",
+          "author_association": "NONE"
+        },
+        {
+          "review_id": 3392740715,
+          "reviewer_username": "UlisesGascon",
+          "reviewer_id": 5110813,
+          "reviewer_profile_url": "https://github.com/UlisesGascon",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/5110813?u=3c41facd8aa26154b9451de237c34b0f78d672a5&v=4",
+          "reviewer_type": "User",
+          "state": "APPROVED",
+          "body": "",
+          "submitted_at": "2025-10-29T10:58:43Z",
+          "commit_id": "5670f1db9a263930188e7ceddab61683a2f8fa0e",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#pullrequestreview-3392740715",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3396412749,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/1199350?u=00eaf2103877b0b74a1cb23e26c20f1923faf100&v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-29T21:40:10Z",
+          "commit_id": "8b2a01fce335957c392f7da25fff0ffb309fb167",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#pullrequestreview-3396412749",
+          "author_association": "CONTRIBUTOR"
+        },
+        {
+          "review_id": 3396699031,
+          "reviewer_username": "tobie",
+          "reviewer_id": 3392,
+          "reviewer_profile_url": "https://github.com/tobie",
+          "reviewer_avatar_url": "https://avatars.githubusercontent.com/u/3392?v=4",
+          "reviewer_type": "User",
+          "state": "COMMENTED",
+          "body": "",
+          "submitted_at": "2025-10-29T22:49:42Z",
+          "commit_id": "8b2a01fce335957c392f7da25fff0ffb309fb167",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#pullrequestreview-3396699031",
+          "author_association": "NONE"
+        }
+      ],
+      "review_comments": [
+        {
+          "comment_id": 2471464179,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "body": "```suggestion\n# lodash v4.17.21\n```\n",
+          "created_at": "2025-10-29T01:03:01Z",
+          "updated_at": "2025-10-29T01:08:20Z",
+          "path": "README.md",
+          "line": null,
+          "diff_hunk": "@@ -1,17 +1,18 @@\n-# lodash v4.17.21\n-\n-> [!NOTE]\n-> As announced on the [OpenJS Foundation blog](https://openjsf.org/blog/sta-supports-lodash), Lodash has received support from the Sovereign Tech Agency to transition into a Feature-Complete maturity stage project, ensuring its long-term stability, security, and sustainability. As part of this effort, Lodash is rebooting its governance. A draft charter will be published shortly. The interim Technical Steering Committee is already at work. For transparency, its members are listed in [GOVERNANCE.md](GOVERNANCE.md).\n+# lodah v4.17.21",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2471464179",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2471469572,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "body": "```suggestion\nThe Release Team is solely responsible for publishing new versions of Lodash to npm. Its current member is:\n```\n",
+          "created_at": "2025-10-29T01:05:52Z",
+          "updated_at": "2025-10-29T01:08:20Z",
+          "path": "GOVERNANCE.md",
+          "line": null,
+          "diff_hunk": "@@ -1,10 +1,32 @@\n+> [!IMPORTANT]\n+> As announced on the [OpenJS Foundation blog](https://openjsf.org/blog/sta-supports-lodash), Lodash has received support from the Sovereign Tech Agency and will transition to the Feature-Complete maturity stage so that it remains stable, secure, and sustainable long-term. As part of this effort, Lodash is rebooting its governance. A draft charter will be published shortly. The upcoming Technical Steering Committee (TSC) is already at work. For transparency, its members are listed below.\n+\n # Lodash Governance\n \n-We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are participating:\n+## Technical Steering Committee Members\n+\n+The current Technical Steering Committee (TSC) members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton)), _(Lodash creator)_\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))\n+- Michał Lipiński ([@falsyvalues](https://github.com/falsyvalues))\n+- Tobie Langel ([@tobie](https://github.com/tobie))\n+- Ulises Gascón ([@ulisesgascon](https://github.com/UlisesGascon))\n+\n+## Security Triage Team\n+\n+The Security Triage Team is responsible for assessing and managing vulnerability and incident reports. Its current members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton))\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))\n+- Ulises Gascón ([@UlisesGascon](https://github.com/UlisesGascon))\n+\n+### Release Team\n+\n+The Release Team is sole responsible for publishing new versions of Lodash to npm. Its current member is:",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2471469572",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2471474042,
+          "reviewer_username": "jonchurch",
+          "reviewer_id": 12915163,
+          "reviewer_profile_url": "https://github.com/jonchurch",
+          "body": "```suggestion\n- Jordan Harband ([@ljharb](https://github.com/ljharb))\n- Michał Lipiński ([@falsyvalues](https://github.com/falsyvalues))\n```\n@falsyvalues had expressed a desire to do security triage as well",
+          "created_at": "2025-10-29T01:07:35Z",
+          "updated_at": "2025-10-29T01:08:20Z",
+          "path": "GOVERNANCE.md",
+          "line": null,
+          "diff_hunk": "@@ -1,10 +1,32 @@\n+> [!IMPORTANT]\n+> As announced on the [OpenJS Foundation blog](https://openjsf.org/blog/sta-supports-lodash), Lodash has received support from the Sovereign Tech Agency and will transition to the Feature-Complete maturity stage so that it remains stable, secure, and sustainable long-term. As part of this effort, Lodash is rebooting its governance. A draft charter will be published shortly. The upcoming Technical Steering Committee (TSC) is already at work. For transparency, its members are listed below.\n+\n # Lodash Governance\n \n-We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are participating:\n+## Technical Steering Committee Members\n+\n+The current Technical Steering Committee (TSC) members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton)), _(Lodash creator)_\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))\n+- Michał Lipiński ([@falsyvalues](https://github.com/falsyvalues))\n+- Tobie Langel ([@tobie](https://github.com/tobie))\n+- Ulises Gascón ([@ulisesgascon](https://github.com/UlisesGascon))\n+\n+## Security Triage Team\n+\n+The Security Triage Team is responsible for assessing and managing vulnerability and incident reports. Its current members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton))\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2471474042",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2472290328,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "body": "Yes, as noted in Milestone 1.\r\n\r\n@jonchurch thanks 👍 ",
+          "created_at": "2025-10-29T09:30:44Z",
+          "updated_at": "2025-10-29T09:30:44Z",
+          "path": "GOVERNANCE.md",
+          "line": null,
+          "diff_hunk": "@@ -1,10 +1,32 @@\n+> [!IMPORTANT]\n+> As announced on the [OpenJS Foundation blog](https://openjsf.org/blog/sta-supports-lodash), Lodash has received support from the Sovereign Tech Agency and will transition to the Feature-Complete maturity stage so that it remains stable, secure, and sustainable long-term. As part of this effort, Lodash is rebooting its governance. A draft charter will be published shortly. The upcoming Technical Steering Committee (TSC) is already at work. For transparency, its members are listed below.\n+\n # Lodash Governance\n \n-We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are participating:\n+## Technical Steering Committee Members\n+\n+The current Technical Steering Committee (TSC) members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton)), _(Lodash creator)_\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))\n+- Michał Lipiński ([@falsyvalues](https://github.com/falsyvalues))\n+- Tobie Langel ([@tobie](https://github.com/tobie))\n+- Ulises Gascón ([@ulisesgascon](https://github.com/UlisesGascon))\n+\n+## Security Triage Team\n+\n+The Security Triage Team is responsible for assessing and managing vulnerability and incident reports. Its current members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton))\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2472290328",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": 2471474042
+        },
+        {
+          "comment_id": 2472440608,
+          "reviewer_username": "tobie",
+          "reviewer_id": 3392,
+          "reviewer_profile_url": "https://github.com/tobie",
+          "body": "lol, I stared at that line for a good 30s last night trying to figure out why it was showing up in the diff, checking for extra whitespace and that the version number hadn't changed.",
+          "created_at": "2025-10-29T10:21:45Z",
+          "updated_at": "2025-10-29T10:21:46Z",
+          "path": "README.md",
+          "line": null,
+          "diff_hunk": "@@ -1,17 +1,18 @@\n-# lodash v4.17.21\n-\n-> [!NOTE]\n-> As announced on the [OpenJS Foundation blog](https://openjsf.org/blog/sta-supports-lodash), Lodash has received support from the Sovereign Tech Agency to transition into a Feature-Complete maturity stage project, ensuring its long-term stability, security, and sustainability. As part of this effort, Lodash is rebooting its governance. A draft charter will be published shortly. The interim Technical Steering Committee is already at work. For transparency, its members are listed in [GOVERNANCE.md](GOVERNANCE.md).\n+# lodah v4.17.21",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2472440608",
+          "author_association": "NONE",
+          "in_reply_to_id": 2471464179
+        },
+        {
+          "comment_id": 2472461230,
+          "reviewer_username": "tobie",
+          "reviewer_id": 3392,
+          "reviewer_profile_url": "https://github.com/tobie",
+          "body": "I'm quite interested to look at the backlog of issues too, so I'll just get I'll just put us all in for the moment.",
+          "created_at": "2025-10-29T10:28:42Z",
+          "updated_at": "2025-10-29T10:28:42Z",
+          "path": "GOVERNANCE.md",
+          "line": null,
+          "diff_hunk": "@@ -1,10 +1,32 @@\n+> [!IMPORTANT]\n+> As announced on the [OpenJS Foundation blog](https://openjsf.org/blog/sta-supports-lodash), Lodash has received support from the Sovereign Tech Agency and will transition to the Feature-Complete maturity stage so that it remains stable, secure, and sustainable long-term. As part of this effort, Lodash is rebooting its governance. A draft charter will be published shortly. The upcoming Technical Steering Committee (TSC) is already at work. For transparency, its members are listed below.\n+\n # Lodash Governance\n \n-We're establishing a formal governance structure and Technical Steering Committee. For more details, please see the [following blog post](https://openjsf.org/blog/sta-supports-lodash). In the interim, the following folks are participating:\n+## Technical Steering Committee Members\n+\n+The current Technical Steering Committee (TSC) members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton)), _(Lodash creator)_\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))\n+- Michał Lipiński ([@falsyvalues](https://github.com/falsyvalues))\n+- Tobie Langel ([@tobie](https://github.com/tobie))\n+- Ulises Gascón ([@ulisesgascon](https://github.com/UlisesGascon))\n+\n+## Security Triage Team\n+\n+The Security Triage Team is responsible for assessing and managing vulnerability and incident reports. Its current members are:\n+\n+- John-David Dalton ([@jdalton](https://github.com/jdalton))\n+- Jon Church ([@jonchurch](https://github.com/jonchurch))\n+- Jordan Harband ([@ljharb](https://github.com/ljharb))",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2472461230",
+          "author_association": "NONE",
+          "in_reply_to_id": 2471474042
+        },
+        {
+          "comment_id": 2475605115,
+          "reviewer_username": "falsyvalues",
+          "reviewer_id": 1199350,
+          "reviewer_profile_url": "https://github.com/falsyvalues",
+          "body": "```suggestion\r\nThe [Security Triage Team][GOVERNANCE.md] will use this document as a process guide when a security vulnerability is reported, from triage to resolution. This process must align with the project's [SECURITY policy](SECURITY.md) and cannot diverge significantly.\r\n```",
+          "created_at": "2025-10-29T21:40:09Z",
+          "updated_at": "2025-10-29T21:40:10Z",
+          "path": "incident_response_plan.md",
+          "line": 8,
+          "diff_hunk": "@@ -1,11 +1,11 @@\n # Incident Response Plan\n \n ## Introduction\n-Security is a top priority for Lodash team. This document outlines the **formal process** for handling **security reports**, including how to **triage**, **assess**, and **disclose** vulnerabilities responsibly.\n+Security is a top priority for Lodash. This document outlines the **formal process** for handling **security reports**, including how to **triage**, **assess**, and **disclose** vulnerabilities responsibly.\n \n ## Scope\n \n-The Security Triage Team will use this document as a process guide when a security vulnerability is reported, from triage to resolution. This process must align with the project's [SECURITY policy](SECURITY.md) and cannot diverge significantly.\n+The [Security Triage Team][] will use this document as a process guide when a security vulnerability is reported, from triage to resolution. This process must align with the project's [SECURITY policy](SECURITY.md) and cannot diverge significantly.",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2475605115",
+          "author_association": "CONTRIBUTOR",
+          "in_reply_to_id": null
+        },
+        {
+          "comment_id": 2475846077,
+          "reviewer_username": "tobie",
+          "reviewer_id": 3392,
+          "reviewer_profile_url": "https://github.com/tobie",
+          "body": "The link is at the [bottom of the file](https://github.com/lodash/lodash/blob/8b2a01fce335957c392f7da25fff0ffb309fb167/incident_response_plan.md?plain=1#L184).",
+          "created_at": "2025-10-29T22:49:42Z",
+          "updated_at": "2025-10-29T22:50:21Z",
+          "path": "incident_response_plan.md",
+          "line": 8,
+          "diff_hunk": "@@ -1,11 +1,11 @@\n # Incident Response Plan\n \n ## Introduction\n-Security is a top priority for Lodash team. This document outlines the **formal process** for handling **security reports**, including how to **triage**, **assess**, and **disclose** vulnerabilities responsibly.\n+Security is a top priority for Lodash. This document outlines the **formal process** for handling **security reports**, including how to **triage**, **assess**, and **disclose** vulnerabilities responsibly.\n \n ## Scope\n \n-The Security Triage Team will use this document as a process guide when a security vulnerability is reported, from triage to resolution. This process must align with the project's [SECURITY policy](SECURITY.md) and cannot diverge significantly.\n+The [Security Triage Team][] will use this document as a process guide when a security vulnerability is reported, from triage to resolution. This process must align with the project's [SECURITY policy](SECURITY.md) and cannot diverge significantly.",
+          "html_url": "https://github.com/lodash/lodash/pull/6036#discussion_r2475846077",
+          "author_association": "NONE",
+          "in_reply_to_id": 2475605115
+        }
+      ],
+      "general_comments": [],
+      "reviewer_summary": {
+        "total_reviews": 7,
+        "total_review_comments": 8,
+        "total_general_comments": 0,
+        "unique_reviewers": [
+          "falsyvalues",
+          "tobie",
+          "jonchurch",
+          "UlisesGascon"
+        ],
+        "approval_count": 1,
+        "changes_requested_count": 0,
+        "comment_only_count": 6
+      }
+    }
+  ]
+}
