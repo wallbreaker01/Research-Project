@@ -51,15 +51,22 @@ Chronological train/test split
         stability, and failure analysis
 ```
 
-The prompts in [`prompts/`](./prompts/)
-are the canonical description of the LLM stages. They define the intended
-sequence:
+The prompts in [`prompts/`](./prompts/) are the canonical LLM prompt text.
+See [`prompts/README.md`](./prompts/README.md) for paper labels and which
+experiment folder uses each file.
 
-- **P1**: extract JavaScript expertise from PR history.
-- **P2**: generate a structured developer or reviewer profile.
-- **P3**: extract structured requirements from a target PR (fields + JSON in one file).
-- **P4**: match the PR to candidate reviewers and rank the top three (matching + JSON in one file).
-- **Failure analysis** (`failure_analysis_prompt.md`): explain missed recommendations during offline evaluation (not numbered P1–P4).
+**Profile stage (offline)**
+
+- **P1** — extract JavaScript skills from PR history (narrative).
+- **P2** — structured developer/reviewer profile (17-category skill matrix; consistency rules are in this prompt).
+
+**Assignment stage (per target PR)**
+
+- **P3** — extract PR requirements as JSON (manuscript §3.4 **P3**).
+- **P4** — rank top 3 reviewers with **KU + frequency** (`LLM+KU+freq`; manuscript §3.4 **P4**).
+- **P5** — ablation matching: **LLM only**, no KU/frequency (`LLM/`).
+- **P6** — ablation matching: **KU binary**, no frequency (`LLM+KU/`).
+- **P7** — optional failure-analysis prompt for evaluation, not live assignment.
 
 ## Repository layout
 
@@ -71,7 +78,9 @@ sequence:
 │   ├── P2_structured_profile_prompt.md
 │   ├── P3_pr_requirement_extraction_prompt.md
 │   ├── P4_reviewer_matching_prompt.md
-│   └── failure_analysis_prompt.md
+│   ├── P5_llm_only_reviewer_matching_prompt.md
+│   ├── P6_llm_ku_binary_reviewer_matching_prompt.md
+│   └── P7_failure_analysis_prompt.md
 ├── newAnalysis/
 │   ├── LLM/
 │   ├── LLM+KU/
@@ -113,11 +122,13 @@ modules.
 
 The three directory names describe progressively richer representations:
 
-| Variant | Meaning |
-|---|---|
-| `LLM` | LLM-generated skill/profile information without the additional knowledge-unit and frequency-weighting stages. |
-| `LLM+KU` | LLM information combined with knowledge units representing technical concepts and skills. |
-| `LLM+KU+freq` | Knowledge units augmented with frequency information from historical activity. This is the most complete variant in the repository. |
+| Variant | Profiles | Reviewer matching prompt |
+|---|---|---|
+| `LLM` | LLM-inferred `identified_skills` (no fixed KU matrix) | **P5** in `prompts/` |
+| `LLM+KU` | Fixed 17-category KU matrix; skills present/absent only | **P6** |
+| `LLM+KU+freq` | KU matrix with frequency counts embedded in category/skill names | **P4** (full method) |
+
+All three use the same **P3** PR-requirement prompt and FAISS similar-PR retrieval in `TopThreeReviewerList.ipynb`.
 
 `oldAnalysis/` and `newAnalysis/` are separate analysis snapshots. They
 contain duplicated experiment structures so results from different iterations

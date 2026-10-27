@@ -134,23 +134,33 @@ Example WRONG javascript_skill_matrix (DO NOT DO THIS):
 
 {format_instructions}
 
-Be specific and evidence-based in your JavaScript skill assessment.
-Map identified skills to the appropriate categories in the skill matrix.
-Count skill usage frequency based on evidence from PR titles, descriptions, and file changes.
+Be specific and evidence-based in your JavaScript skill assessment. Map identified
+skills to the appropriate categories, using evidence from PR titles, descriptions,
+and file changes.
+
+CATEGORY RULES:
+- Only use the 17 exact predefined category names; DO NOT invent new categories or skills
+- DO NOT use subcategory or individual skill names (e.g., "Testing Libraries", "Node.js") as category names
+- Route testing skills (Jest, Mocha, etc.) under "Framework/Library Expertise"; route
+  code-quality/linting skills under the existing category they best fit
+
+FREQUENCY EMBEDDING RULES:
+- For each non-empty category, embed the frequency count in BOTH the category name
+  and each individual skill name
+- Format: "Category Name, frequency: X": ["Skill Name, frequency: Y", ...]
+- The category frequency is the SUM of its individual skill frequencies
+- For categories with no skills, omit the frequency and use the category name alone
+
 REMEMBER:
-- Embed frequency counts in BOTH the category names AND individual skill names for non-empty skill arrays!
-- Only use the 17 exact base category names!
 - Only use skills EXPLICITLY listed in the subcategory definitions for javascript_skill_matrix!
 - DO NOT invent new skills or add skills not in the predefined lists!
-- Format: "Category Name, frequency: X": ["skill1, frequency: Y", "skill2, frequency: Z"]
-- The category frequency should be the SUM of all individual skill frequencies in that category
 ````
 
 **Note:** Doubled curly braces (`{{`, `}}`) in the examples match the Python template source; LangChain resolves them to single braces in the text sent to the model.
 
 ## Reviewer variant
 
-Same rules and matrix structure as above. Source: `newAnalysis/LLM+KU+freq/axios/Reviewer_profile.ipynb`.
+Same rules and matrix structure as above.
 
 **Template variables:** `skills_analysis`, `reviewer_name`, `review_count`, `repo_list`
 
@@ -177,4 +187,4 @@ Generate a JavaScript reviewer profile that includes:
 4. Detailed skill matrix mapping to the provided JavaScript categories WITH EMBEDDED FREQUENCY
 ```
 
-The remainder of the template (critical rules, JSON output rules, `{format_instructions}`, and REMEMBER block) matches the developer prompt, with reviewer-oriented skill-selection rule text where the notebook references `skill_frequency`.
+The remainder of the template (critical rules, JSON output rules, `{format_instructions}`, category/frequency consistency rules, and REMEMBER block) matches the developer prompt, with reviewer-oriented skill-selection rule text where the notebook references `skill_frequency`.
